@@ -3,13 +3,56 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Brand Colors */
+  --owt-supporting: #4E5F4E;
+  --owt-primary-brown: #BB8B74;
+  --owt-secondary-brown: #B49E9A;
+  --owt-tertiary-brown: #AFA691;
+  
+  /* Button Colors */
+  --owt-btn-light-bg: #ECE7DD;
+  --owt-btn-light-text: #905E46;
+  --owt-btn-dark-bg: #BB8B74;
+  --owt-btn-dark-text: #FFFFFF;
+  
+  /* Background Colors */
+  --owt-bg-primary: #F7F8F0;
+  --owt-bg-secondary: #F8F6F0;
+  --owt-bg-tertiary: #F6F6F6;
+  --owt-bg-accent: #ECE7DD;
+  
+  /* Text Colors */
+  --owt-text-primary: #555555;
+  --owt-text-secondary: #8C8E8A;
+  --owt-text-white: #FFFFFF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+  
+  /* OWT Brand Colors */
+  --color-owt-supporting: var(--owt-supporting);
+  --color-owt-primary-brown: var(--owt-primary-brown);
+  --color-owt-secondary-brown: var(--owt-secondary-brown);
+  --color-owt-tertiary-brown: var(--owt-tertiary-brown);
+  
+  /* OWT Background Colors */
+  --color-owt-bg-primary: var(--owt-bg-primary);
+  --color-owt-bg-secondary: var(--owt-bg-secondary);
+  --color-owt-bg-tertiary: var(--owt-bg-tertiary);
+  --color-owt-bg-accent: var(--owt-bg-accent);
+  
+  /* OWT Text Colors */
+  --color-owt-text-primary: var(--owt-text-primary);
+  --color-owt-text-secondary: var(--owt-text-secondary);
+  --color-owt-text-white: var(--owt-text-white);
+  
+  /* Custom breakpoint so hamburger shows below 867px and desktop nav at 867px+ */
+  --breakpoint-md: 867px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +63,336 @@
 }
 
 body {
-  background: var(--background);
+  background: #ffffff !important;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+.heading-font {
+  font-family: var(--font-heading);
+}
+
+.btn-base {
+  border-radius: 100px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.btn-light {
+  background: var(--owt-btn-light-bg);
+  color: var(--owt-btn-light-text);
+}
+.btn-dark {
+  background: var(--owt-btn-dark-bg);
+  color: var(--owt-btn-dark-text);
+  border: 1px solid var(--owt-btn-dark-bg);
+}
+
+.btn-dark:hover, .btn-dark:focus-visible {
+  background: transparent;
+  color: var(--owt-btn-dark-bg);
+}
+
+/* Scroll bounce animation */
+@keyframes owt-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.scroll-bounce {
+  animation: owt-bounce 2s ease-in-out infinite;
+}
+
+/* Responsive heading clamps */
+.text-clamp-hero-title {
+  font-size: clamp(2.75rem, 5.5vw, 3.25rem);
+  line-height: 1.3; /* looser on mobile */
+}
+@media (min-width: var(--breakpoint-md)) {
+  .text-clamp-hero-title {
+    line-height: 1.1; /* tighter on larger screens */
+  }
+}
+.text-clamp-hero-subtitle {
+  font-size: clamp(1.5rem, 3.2vw, 2.125rem);
+  line-height: 1.25;
+}
+.text-clamp-about-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+.text-clamp-eyebrow {
+  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+  line-height: 1.2;
+}
+
+/* CTA heading clamp */
+.text-clamp-cta-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+/* Page heading clamp - between hero and about title sizes */
+.text-clamp-page-title {
+  font-size: clamp(2.375rem, 4.5vw, 2.875rem);
+  line-height: 1.15;
+}
+
+/* Section heading clamp - smaller max size than about title */
+.text-clamp-section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  line-height: 1.2;
+}
+
+/* Section Utilities */
+.section-container {
+  @apply mx-auto max-w-7xl px-6 md:px-8;
+}
+
+.section-padding {
+  @apply py-10 md:py-16;
+}
+
+.section-padding-sm {
+  @apply py-8 md:py-10;
+}
+
+.section-grid-2col {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center;
+}
+
+.card-rounded {
+  @apply rounded-[40px] md:rounded-[80px] lg:rounded-[100px];
+}
+
+.card-rounded-sm {
+  @apply rounded-[20px] md:rounded-[40px];
+}
+
+/* ========================================
+   COGNITO FORMS CUSTOM STYLES
+   ======================================== */
+
+/* ========================================
+   1. CUSTOM PROPERTIES
+   ======================================== */
+.cog-cognito {
+  /* Transparent backgrounds */
+  --input__background-color: transparent;
+  --button__background-color: transparent;
+  --form__background-color: transparent;
+
+  /* Borders */
+  --input__border-color: #F8F6F0;
+  --button__border-color: #F8F6F0;
+  --form__border-color: #F8F6F0;
+  --input__border-width: 1px;
+  --button__border-width: 1px;
+  --form__border-width: 1px;
+  --input__border-radius: 10px;
+  --button__border-radius: 10px;
+  --form__border-radius: 10px;
+
+  /* Spacing */
+  --input__padding-h: 24px;
+  --input__padding-v: 15px;
+  --form__width: 100%;
+
+  /* Font */
+  --font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* ========================================
+   2. BASE FORM STYLES
+   ======================================== */
+.cog-form {
+  background-color: transparent !important;
+  border-radius: 10px !important;
+  padding: 15px 24px !important;
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  width: 100% !important;
+
+  /* Gutter for row spacing and error colors */
+  --gutter: 15px !important;
+  --negative: #ff5751 !important;
+  --negative-reverse: #ffffff !important;
+}
+
+/* Common input/select/textarea/button styles */
+.cog-form input,
+.cog-form textarea,
+.cog-form select,
+.cog-form button {
+  border: 1px solid #F8F6F0 !important;
+  border-radius: 10px !important;
+  padding: 15px 24px !important;
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  width: 100% !important;
+  background-color: transparent !important;
+}
+
+/* Control placeholder styling */
+.cog-form input::placeholder,
+.cog-form textarea::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+  font-size: 16px !important;
+}
+
+/* Input focus effect */
+.cog-form input:focus,
+.cog-form textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Ensure input text matches placeholder style */
+.cog-form input,
+.cog-form textarea {
+  color: white !important;
+  font-size: 16px !important;
+}
+
+/* Textarea specific height */
+.cog-form textarea {
+  height: 100px !important;
+}
+
+/* Text selection color */
+.cog-form input::selection,
+.cog-form textarea::selection {
+  background: #905E46 !important;
+  color: #ECE7DD !important;
+}
+
+/* ========================================
+   3. BUTTON (SUBMIT/PRIMARY) STYLES
+   ======================================== */
+.cog-form button[type="submit"],
+.cog-form .cog-button--primary {
+  background-color: #ECE7DD !important;
+  color: #905E46 !important;
+  padding: 15px 32px !important;
+  border-radius: 100px !important;
+  box-shadow: 0px 10px 40px 0px #00000026 !important;
+  border: 0px !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.cog-form button[type="submit"]:hover,
+.cog-form .cog-button--primary:hover {
+  background-color: #905E46 !important;
+  color: #ECE7DD !important;
+}
+
+/* ========================================
+   4. CONTENT BLOCK
+   ======================================== */
+.cog-form .cog-content {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  color: #F8F6F0 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  border-radius: 10px !important;
+  padding: 15px 24px !important;
+  background-color: transparent !important;
+}
+
+/* ========================================
+   5. LAYOUT / RESPONSIVE
+   ======================================== */
+.cog-form .cog-field .cog-row {
+  column-gap: var(--gutter) !important;
+}
+
+@media (max-width: 768px) {
+  .cog-form .cog-field .cog-row {
+    column-gap: calc(var(--gutter) / 2) !important;
+  }
+}
+
+/* ========================================
+   6. ERROR STYLES
+   ======================================== */
+/* Error messages */
+.cog-form .cog-error-message {
+  background-color: #ff5751 !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  font-weight: bold !important;
+}
+
+/* Fields with errors */
+.cog-form .cog-field.is-error .el-input__inner,
+.cog-form .cog-field.is-error .el-textarea__inner {
+  border-color: #ff5751 !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* Required field indicator */
+.cog-form .cog-field.is-required .cog-label::after {
+  content: "*";
+  color: #ff5751 !important;
+  font-weight: bold;
+}
+
+/* Remove default error highlights */
+.cog-col.is-error:not(.cog-hidden-validation)::before,
+.cog-col.is-error:not(.cog-hidden-validation)::after {
+  background-color: transparent !important;
+  border: 0px !important;
+  outline: none !important;
+}
+
+.cog-col.is-error:not(.cog-hidden-validation) {
+  margin-bottom: 0px !important;
+}
+
+/* Override autofill background for Chrome/Safari (WebKit) */
+.cog-form input:-webkit-autofill,
+.cog-form input:-webkit-autofill:hover,
+.cog-form input:-webkit-autofill:focus,
+.cog-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+
+  -webkit-text-fill-color: #fff !important;
+  background: transparent !important;
+
+  /* Hack to delay or prevent browser from re-applying yellow autofill */
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+.cog-html *:last-child {
+    font-size: 18px !important;
+}
+
+a.generate-back-to-top {
+	z-index: 9999 !important;
+}
+
+/* Remove global smooth scrolling */
+html {
+    scroll-behavior: unset !important;
+}
+
+/* Apply smooth scrolling only to anchor links except back-to-top */
+a[href^="#"]:not(.generate-back-to-top) {
+    scroll-behavior: smooth !important;
+}
+
+/* Ensure the last content block in main has no trailing space */
+main > :is(section, article, div):last-of-type {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
