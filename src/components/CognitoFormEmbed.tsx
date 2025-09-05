@@ -12,10 +12,11 @@ export default function CognitoFormEmbed({ dataKey, formId, className }: Cognito
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    const container = containerRef.current;
+    if (!container) return;
 
     // Clear any previous content before injecting
-    containerRef.current.innerHTML = '';
+    container.innerHTML = '';
 
     const script = document.createElement('script');
     script.src = 'https://www.cognitoforms.com/f/seamless.js';
@@ -23,11 +24,11 @@ export default function CognitoFormEmbed({ dataKey, formId, className }: Cognito
     script.setAttribute('data-key', dataKey);
     script.setAttribute('data-form', String(formId));
 
-    containerRef.current.appendChild(script);
+    container.appendChild(script);
 
     return () => {
-      if (containerRef.current) {
-        containerRef.current.innerHTML = '';
+      if (container) {
+        container.innerHTML = '';
       }
     };
   }, [dataKey, formId]);

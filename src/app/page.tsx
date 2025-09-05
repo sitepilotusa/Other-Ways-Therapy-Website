@@ -98,7 +98,7 @@ export default function Home() {
                   live a more present, integrated, meaningful life.
                 </p>
                 <p>
-                  Whether you're navigating the effects of trauma, anxiety, relationship challenges, experiencing a life
+                  Whether you’re navigating the effects of trauma, anxiety, relationship challenges, experiencing a life
                   transition, or seeking personal growth, I offer a safe space for you to find your own path towards
                   healing.
                 </p>
@@ -154,36 +154,36 @@ export default function Home() {
             </h2>
             <div className="flex flex-col gap-6 md:gap-8 text-sm md:text-base text-owt-text-primary font-light">
               <p>
-                You've reached a point in your life where you're craving true internal change. This may not be your first
-                time in therapy. You've invested time and energy into your healing journey, yet you still find yourself
-                hitting a wall. You're thriving in many areas of your life, but you're also surprised by the ways you feel
+                You’ve reached a point in your life where you’re craving true internal change. This may not be your first
+                time in therapy. You’ve invested time and energy into your healing journey, yet you still find yourself
+                hitting a wall. You’re thriving in many areas of your life, but you’re also surprised by the ways you feel
                 stuck—unsure why certain patterns continue to show up.
               </p>
               
               <p>
                 Often, hidden anxiety is part of the picture. It has a way of being sneaky, making it hard to recognize even
-                when you're the one living with it. On the outside, you might look calm and capable, but inside you're
+                when you’re the one living with it. On the outside, you might look calm and capable, but inside you’re
                 working overtime just to hold things together. That effort can feel exhausting.
               </p>
               
               <div className="space-y-4 md:space-y-5 my-8 md:my-10">
                 <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>Maybe you get triggered seemingly out of nowhere.</p></div>
-                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>Your inner critic feels relentless, and you don't know how else to respond to yourself.</p></div>
-                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>No matter what you accomplish, a quiet voice insists you're not enough.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>Your inner critic feels relentless, and you don’t know how else to respond to yourself.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>No matter what you accomplish, a quiet voice insists you’re not enough.</p></div>
                 <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>It can show up in your relationships, too. You may feel that push‑and‑pull tug‑of‑war, slip into people‑pleaser mode, or lose touch with your own needs. Sometimes you second‑guess your intuition or decisions because prioritizing others has always come first.</p></div>
                 <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>And when the emotions get too strong, you might find yourself shutting down.</p></div>
-                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>You'd rather alphabetize your spice rack than sit with your feelings.</p></div>
-                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>It feels safer to stay in your head—analyzing and intellectualizing—than to drop into what you feel. Or maybe you're not even sure how.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>You’d rather alphabetize your spice rack than sit with your feelings.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>It feels safer to stay in your head—analyzing and intellectualizing—than to drop into what you feel. Or maybe you’re not even sure how.</p></div>
               </div>
               
               <p>
-                This kind of anxiety doesn't always make a scene, but it quietly chips away at your peace until it feels
+                This kind of anxiety doesn’t always make a scene, but it quietly chips away at your peace until it feels
                 overwhelming.
               </p>
               
               <p>
-                Does this sound familiar? It can be so disruptive when you're trying to live the life you want but feel like
-                there's a glass wall between where you are and where you long to be.
+                Does this sound familiar? It can be so disruptive when you’re trying to live the life you want but feel like
+                there’s a glass wall between where you are and where you long to be.
               </p>
               
               <p className="text-center text-lg font-medium text-[#BB8B74] mt-6">You deserve relief.</p>
