@@ -112,113 +112,207 @@ export default function BlogPost() {
                 </div>
               </div>
 
-              {/* Blog Content */}
+              {/* Introduction Section */}
               <div className="prose prose-lg max-w-none">
                 <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-6">
-                  <p>
-                    Have you ever wondered why, despite your best efforts, certain patterns in your life seem to persist? Maybe you've criticized yourself for being "too anxious," "too sensitive," or "too guarded." Many people come to therapy believing there's something wrong with them or that they're somehow broken. As a therapist certified in EMDR (Eye Movement Desensitization and Reprocessing), I've witnessed countless clients transform their relationship with their symptoms by understanding one crucial truth: Our challenging behaviors often started as creative adaptations to difficult situations.
-                  </p>
-
-                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mt-8 mb-4">
-                    The Wisdom In Our Wiring
-                  </h2>
-
-                  <p>
-                    Consider the journey of this tree. When this tree first took root, it faced a unique challenge – part of its foundation lay over a deep crevasse. To survive, it didn't grow like the other nearby trees. Instead, it developed an extraordinary root system, spreading tendrils across the gap, weaving them into an intricate network strong enough to hold not just the tree, but even a massive boulder that later came to rest upon them. These roots found a way. Their adaptation is a testament to the tree's remarkable ability to survive.
-                  </p>
-
-                  <p>
-                    Like this cliff-edge tree, we too, have a remarkably sophisticated root system. Our nervous system, which includes our brains and a complex network of nerves, are naturally equipped with an incredible system for processing experiences and adapting to our environment. This is what we call Adaptive Information Processing (AIP), the theoretical foundation of EMDR therapy. When functioning optimally, this system helps us vet all incoming information internally and externally, process experiences, and store them appropriately in our memory networks. However, when we encounter overwhelming experiences or trauma, this natural processing system can become disrupted. These experiences do not integrate in our memory networks in the same way, remaining unprocessed, and feeding into present day distress.
-                  </p>
-
-                  <p>
-                    Furthermore, our subconscious responses we developed during these difficult times were creative solutions our brain and body developed to protect us. Just like the tree's roots seeking solid ground across the crevasse, our adaptations served to keep us going.
-                  </p>
-
-                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mt-8 mb-4">
-                    When Protection Strategies Becomes Pattern
-                  </h2>
-
-                  <p>
-                    Let's explore some common experiences that bring people to therapy and explore the possibilities around their original protective functions:
-                  </p>
-
-                  <h3 className="heading-font text-lg md:text-xl text-owt-supporting mt-6 mb-3">
-                    Hypervigilance: Your Internal Security System
-                  </h3>
-
-                  <p>
-                    That constant scanning for danger, the inability to relax, always feeling on edge – these experiences can be exhausting. Yet, this hypervigilance likely developed because at some point, it was crucial for your survival. Perhaps you grew up in an unpredictable environment, or experienced situations where danger could appear at any moment. Your brain and body brilliantly adapted by creating an internal security system that never takes a break. While this served you well in the past, it might now be detecting threats in places where they no longer exist. It can be exhausting!
-                  </p>
-
-                  <h3 className="heading-font text-lg md:text-xl text-owt-supporting mt-6 mb-3">
-                    People-Pleasing: The Art Of Relational Safety
-                  </h3>
-
-                  <p>
-                    If you find yourself constantly attuned to others' needs while neglecting your own, know that this pattern likely developed as a sophisticated survival strategy. In environments where maintaining relationships was crucial for emotional or physical safety, becoming exquisitely attuned to others' needs was adaptive. Your ability to sense and respond to others' emotions wasn't a weakness – it was a strength that helped you navigate challenging relationships or situations.
-                  </p>
-
-                  <h3 className="heading-font text-lg md:text-xl text-owt-supporting mt-6 mb-3">
-                    Perfectionism: The Desire For Control & Assurance
-                  </h3>
-
-                  <p>
-                    Perfectionism, an over-functioning mechanism, likely developed to create safety and control in an unpredictable environment. Perhaps adhering to high standards was a sure-fire way to avoid judgment, prevent criticism, gain approval, or ensure security. You learned that by being perfect and flawless, you could shield yourself from painful outcomes and secure the validation needed for emotional security.
-                  </p>
-
-                  <h3 className="heading-font text-lg md:text-xl text-owt-supporting mt-6 mb-3">
-                    Emotional Numbness: A Shield When It's Too Much
-                  </h3>
-
-                  <p>
-                    Emotional numbness, the ability to disconnect from your emotions, might now feel like a barrier to connection with yourself and others. If you experience emotional numbness, this might have been your nervous system's way of handling overwhelming experiences or emotions. It's possible these felt too big to process at the time, or as a child, you did not have a safe adult to process these emotions with. When emotions felt too big or too dangerous to feel, your brain found a way to create distance and maintain functioning.
-                  </p>
-
-                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mt-8 mb-4">
-                    How EMDR Therapy Helps Rewire These Patterns
-                  </h2>
-
-                  <p>
-                    EMDR therapy offers a unique approach to working with these behaviors or symptoms. Rather than seeing them as problems to be eliminated, EMDR helps us understand and reprocess the experiences that led to their development. Through bilateral stimulation (side-to-side eye movements or other forms of alternating stimulation), EMDR helps the brain access its natural healing abilities.
-                  </p>
-
-                  <p>
-                    The goal isn't to strip away all our protective behaviors – social awareness, emotional regulation, and some level of vigilance, is healthy and necessary. As you move forward in your healing journey, you might find that some adaptive behaviors naturally shift as your brain processes past experiences. Others might remain as tools in your emotional toolkit, available when needed but no longer running on autopilot.
-                  </p>
-
-                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mt-8 mb-4">
-                    Moving Forward With Compassion
-                  </h2>
-
-                  <p>
-                    Healing doesn't mean eliminating all traces of our adaptive responses. Instead, it's about:
-                  </p>
-
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Developing a compassionate understanding of why these patterns emerged</li>
-                    <li>Learning to recognize when old protective strategies are being activated</li>
-                    <li>Building new, flexible responses that match our current life circumstances</li>
-                    <li>Honoring the wisdom of our survival while creating space for new ways of being</li>
-                  </ul>
-
-                  <p>
-                    Remember, your responses made sense given your experiences. Your brain did exactly what it needed to do to help you survive. Now, with support and new resources, you can begin to update these responses to better serve your current life circumstances.
-                  </p>
-
-                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mt-8 mb-4">
-                    Reach Out For Support
-                  </h2>
-
-                  <p>
-                    If you're recognizing yourself in these patterns, know that support is available. EMDR therapy can help you understand and transform these adaptive behaviors while honoring the incredible ways you've survived. Your sticky symptoms and puzzling behaviors aren't signs of brokenness – they're evidence of your brain and body's remarkable ability to adapt and protect you, even in the most challenging circumstances.
-                  </p>
-
-                  <p>
-                    Ready to explore your story with compassion and understanding? Contact Other Ways Therapy to learn more about how EMDR Therapy Intensives can support your healing journey.
-                  </p>
+                  <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 border-l-4 border-owt-primary-brown">
+                    <p className="text-base md:text-lg leading-relaxed">
+                      Have you ever wondered why, despite your best efforts, certain patterns in your life seem to persist? Maybe you've criticized yourself for being "too anxious," "too sensitive," or "too guarded." Many people come to therapy believing there's something wrong with them or that they're somehow broken. As a therapist certified in EMDR (Eye Movement Desensitization and Reprocessing), I've witnessed countless clients transform their relationship with their symptoms by understanding one crucial truth: <span className="font-medium text-owt-supporting">Our challenging behaviors often started as creative adaptations to difficult situations.</span>
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              {/* The Wisdom Section */}
+              <section className="mt-12 md:mt-16">
+                <div className="bg-[#ECE7DD] rounded-[20px] p-8 md:p-10 lg:p-12">
+                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mb-6 text-center">
+                    The Wisdom In Our Wiring
+                  </h2>
+                  
+                  <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-6">
+                    <p>
+                      Consider the journey of this tree. When this tree first took root, it faced a unique challenge – part of its foundation lay over a deep crevasse. To survive, it didn't grow like the other nearby trees. Instead, it developed an extraordinary root system, spreading tendrils across the gap, weaving them into an intricate network strong enough to hold not just the tree, but even a massive boulder that later came to rest upon them. These roots found a way. Their adaptation is a testament to the tree's remarkable ability to survive.
+                    </p>
+
+                    <div className="bg-white rounded-[15px] p-6 md:p-7 my-8 border border-owt-primary-brown/20">
+                      <p className="text-center text-sm md:text-base italic text-owt-supporting font-medium">
+                        "Like this cliff-edge tree, we too, have a remarkably sophisticated root system."
+                      </p>
+                    </div>
+
+                    <p>
+                      Our nervous system, which includes our brains and a complex network of nerves, are naturally equipped with an incredible system for processing experiences and adapting to our environment. This is what we call <span className="font-medium text-owt-primary-brown">Adaptive Information Processing (AIP)</span>, the theoretical foundation of EMDR therapy.
+                    </p>
+                    
+                    <p>
+                      When functioning optimally, this system helps us vet all incoming information internally and externally, process experiences, and store them appropriately in our memory networks. However, when we encounter overwhelming experiences or trauma, this natural processing system can become disrupted. These experiences do not integrate in our memory networks in the same way, remaining unprocessed, and feeding into present day distress.
+                    </p>
+
+                    <p>
+                      Furthermore, our subconscious responses we developed during these difficult times were creative solutions our brain and body developed to protect us. Just like the tree's roots seeking solid ground across the crevasse, our adaptations served to keep us going.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Protection Strategies Section */}
+              <section className="mt-12 md:mt-16">
+                <div className="text-center mb-8 md:mb-12">
+                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mb-6">
+                    When Protection Strategies Become Patterns
+                  </h2>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed max-w-3xl mx-auto">
+                    Let's explore some common experiences that bring people to therapy and explore the possibilities around their original protective functions:
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                  {/* Hypervigilance Card */}
+                  <div className="bg-owt-secondary-brown rounded-[20px] p-6 md:p-8 text-white">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-white/80"></div>
+                      <h3 className="heading-font text-lg md:text-xl">
+                        Hypervigilance: Your Internal Security System
+                      </h3>
+                    </div>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      That constant scanning for danger, the inability to relax, always feeling on edge – these experiences can be exhausting. Yet, this hypervigilance likely developed because at some point, it was crucial for your survival. Perhaps you grew up in an unpredictable environment, or experienced situations where danger could appear at any moment. Your brain and body brilliantly adapted by creating an internal security system that never takes a break. While this served you well in the past, it might now be detecting threats in places where they no longer exist. It can be exhausting!
+                    </p>
+                  </div>
+
+                  {/* People-Pleasing Card */}
+                  <div className="bg-owt-tertiary-brown rounded-[20px] p-6 md:p-8 text-white">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-white/80"></div>
+                      <h3 className="heading-font text-lg md:text-xl">
+                        People-Pleasing: The Art Of Relational Safety
+                      </h3>
+                    </div>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      If you find yourself constantly attuned to others' needs while neglecting your own, know that this pattern likely developed as a sophisticated survival strategy. In environments where maintaining relationships was crucial for emotional or physical safety, becoming exquisitely attuned to others' needs was adaptive. Your ability to sense and respond to others' emotions wasn't a weakness – it was a strength that helped you navigate challenging relationships or situations.
+                    </p>
+                  </div>
+
+                  {/* Perfectionism Card */}
+                  <div className="bg-owt-secondary-brown rounded-[20px] p-6 md:p-8 text-white">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-white/80"></div>
+                      <h3 className="heading-font text-lg md:text-xl">
+                        Perfectionism: The Desire For Control & Assurance
+                      </h3>
+                    </div>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Perfectionism, an over-functioning mechanism, likely developed to create safety and control in an unpredictable environment. Perhaps adhering to high standards was a sure-fire way to avoid judgment, prevent criticism, gain approval, or ensure security. You learned that by being perfect and flawless, you could shield yourself from painful outcomes and secure the validation needed for emotional security.
+                    </p>
+                  </div>
+
+                  {/* Emotional Numbness Card */}
+                  <div className="bg-owt-tertiary-brown rounded-[20px] p-6 md:p-8 text-white">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-3 h-3 rounded-full bg-white/80"></div>
+                      <h3 className="heading-font text-lg md:text-xl">
+                        Emotional Numbness: A Shield When It's Too Much
+                      </h3>
+                    </div>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Emotional numbness, the ability to disconnect from your emotions, might now feel like a barrier to connection with yourself and others. If you experience emotional numbness, this might have been your nervous system's way of handling overwhelming experiences or emotions. It's possible these felt too big to process at the time, or as a child, you did not have a safe adult to process these emotions with. When emotions felt too big or too dangerous to feel, your brain found a way to create distance and maintain functioning.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* How EMDR Helps Section */}
+              <section className="mt-12 md:mt-16">
+                <div className="bg-white rounded-[20px] p-8 md:p-10 lg:p-12 border border-owt-primary-brown/20">
+                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mb-6 text-center">
+                    How EMDR Therapy Helps Rewire These Patterns
+                  </h2>
+                  
+                  <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-6">
+                    <p>
+                      EMDR therapy offers a unique approach to working with these behaviors or symptoms. Rather than seeing them as problems to be eliminated, EMDR helps us understand and reprocess the experiences that led to their development. Through bilateral stimulation (side-to-side eye movements or other forms of alternating stimulation), EMDR helps the brain access its natural healing abilities.
+                    </p>
+
+                    <div className="bg-[#F8F6F0] rounded-[15px] p-6 md:p-7 border-l-4 border-owt-primary-brown">
+                      <p className="italic text-sm md:text-base text-owt-supporting">
+                        "The goal isn't to strip away all our protective behaviors – social awareness, emotional regulation, and some level of vigilance, is healthy and necessary. As you move forward in your healing journey, you might find that some adaptive behaviors naturally shift as your brain processes past experiences. Others might remain as tools in your emotional toolkit, available when needed but no longer running on autopilot."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Moving Forward Section */}
+              <section className="mt-12 md:mt-16">
+                <div className="bg-[#ECE7DD] rounded-[20px] p-8 md:p-10 lg:p-12">
+                  <h2 className="heading-font text-xl md:text-2xl text-owt-supporting mb-6 text-center">
+                    Moving Forward With Compassion
+                  </h2>
+                  
+                  <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-6">
+                    <p className="text-center">
+                      Healing doesn't mean eliminating all traces of our adaptive responses. Instead, it's about:
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-8">
+                      <div className="bg-white rounded-[15px] p-5 md:p-6 flex items-start space-x-3">
+                        <div className="w-2 h-2 rounded-full bg-owt-primary-brown mt-2 flex-shrink-0"></div>
+                        <p className="text-sm md:text-base">Developing a compassionate understanding of why these patterns emerged</p>
+                      </div>
+                      
+                      <div className="bg-white rounded-[15px] p-5 md:p-6 flex items-start space-x-3">
+                        <div className="w-2 h-2 rounded-full bg-owt-primary-brown mt-2 flex-shrink-0"></div>
+                        <p className="text-sm md:text-base">Learning to recognize when old protective strategies are being activated</p>
+                      </div>
+                      
+                      <div className="bg-white rounded-[15px] p-5 md:p-6 flex items-start space-x-3">
+                        <div className="w-2 h-2 rounded-full bg-owt-primary-brown mt-2 flex-shrink-0"></div>
+                        <p className="text-sm md:text-base">Building new, flexible responses that match our current life circumstances</p>
+                      </div>
+                      
+                      <div className="bg-white rounded-[15px] p-5 md:p-6 flex items-start space-x-3">
+                        <div className="w-2 h-2 rounded-full bg-owt-primary-brown mt-2 flex-shrink-0"></div>
+                        <p className="text-sm md:text-base">Honoring the wisdom of our survival while creating space for new ways of being</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-[15px] p-6 md:p-7 mt-8 text-center">
+                      <p className="text-sm md:text-base font-medium text-owt-supporting">
+                        Remember, your responses made sense given your experiences. Your brain did exactly what it needed to do to help you survive. Now, with support and new resources, you can begin to update these responses to better serve your current life circumstances.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Call to Action Section */}
+              <section className="mt-12 md:mt-16">
+                <div className="bg-owt-primary-brown rounded-[20px] p-8 md:p-10 lg:p-12 text-center text-white">
+                  <h2 className="heading-font text-xl md:text-2xl mb-6">
+                    Reach Out For Support
+                  </h2>
+                  
+                  <div className="text-sm md:text-base font-light leading-relaxed space-y-6 max-w-3xl mx-auto">
+                    <p>
+                      If you're recognizing yourself in these patterns, know that support is available. EMDR therapy can help you understand and transform these adaptive behaviors while honoring the incredible ways you've survived. Your sticky symptoms and puzzling behaviors aren't signs of brokenness – they're evidence of your brain and body's remarkable ability to adapt and protect you, even in the most challenging circumstances.
+                    </p>
+
+                    <p className="text-base md:text-lg font-medium">
+                      Ready to explore your story with compassion and understanding?
+                    </p>
+                  </div>
+                  
+                  <div className="mt-8">
+                    <Link 
+                      href="/contact" 
+                      className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
+                    >
+                      Contact Other Ways Therapy
+                    </Link>
+                  </div>
+                </div>
+              </section>
 
               {/* Author Bio Section */}
               <div className="mt-12 md:mt-16 border-t border-owt-text-secondary/20 pt-8 md:pt-12">
@@ -253,8 +347,6 @@ export default function BlogPost() {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </article>
