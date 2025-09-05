@@ -83,7 +83,7 @@ export default function EMDRIntensives() {
       introText="EMDR Intensives provide concentrated healing work in 3-5 hour sessions, perfect for those seeking significant progress in a shorter timeframe. This format allows for deeper processing and breakthrough moments that can transform your healing journey."
       mainSectionHeading="The Power of Intensive Work"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/patient-4.png"
+      mainSectionImage="/assets/IMG_3358.jpeg"
       mainSectionImageAlt="EMDR Intensive therapy session"
       mainSectionCTA="Schedule Your Intensive"
       processHeading="Your Intensive Experience"

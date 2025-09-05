@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Specialties | Other Ways Therapy",
   description:
-    "Therapy specialties including trauma recovery, anxiety, attachment wounds, and Highly Sensitive Persons (HSPs). EMDR intensives and IFS in Colorado.",
+    "Therapy for sneaky anxiety and trauma: overfunctioning, perfectionism, people-pleasing, and boundary work. EMDR and IFS in Colorado.",
   alternates: { canonical: "/specialties" },
 };
 
@@ -38,41 +38,176 @@ export default function Specialties() {
         </div>
       </section>
 
-      {/* Therapeutic Modalities Section */}
+      {/* Introduction Section */}
       <section className="w-full bg-[#F7F8F0] section-padding">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="heading-font text-clamp-about-title text-owt-supporting mb-6 md:mb-8">
-              Therapeutic Modalities
+              Therapy for Sneaky Anxiety & Trauma
             </h2>
-            <div className="space-y-6 text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-              <p>
-                I honor the diversity of the human experience and recognize that there is no one-size-fits-all approach to healing. My integrative therapy approach combines evidence-based modalities with a deep reverence for your innate wisdom and resilience.
-              </p>
-              <p>
-                I specialize in helping individuals navigate a range of challenges, including recent traumatic experiences, complex trauma, relationship challenges, attachment wounds, anxiety, and the unique experiences of Highly Sensitive Persons (HSPs). While we may not be able to address everything in a one day Intensive, we can thoughtfully decide what is impacting you the most and give it the undivided attention it deserves. I tailor each Intensive to meet the unique needs of my clients, in collaboration with my client. My goal is to create a safe, non-judgmental space and container where healing can occur at a pace that feels comfortable and empowering.
-              </p>
+            <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+              Explore therapy for sneaky anxiety and trauma patterns that may be impacting your daily life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Do These Thoughts Sound Familiar Section */}
+      <section className="relative w-full bg-[#ECE7DD] section-padding overflow-hidden">
+        {/* Decorative background SVG */}
+        <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
+          <Image
+            src="/assets/Group-2 copy.svg"
+            alt=""
+            width={600}
+            height={560}
+            aria-hidden
+            priority={false}
+            className="w-[450px] md:w-[600px] rotate-180 lg:rotate-0"
+          />
+        </div>
+
+        <div className="relative z-10 section-container">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-8 md:mb-10 text-center">
+              Do These Thoughts Sound Familiar?
+            </h3>
+            
+            <div className="space-y-4 md:space-y-5">
+              <div className="border-l-4 border-[#BB8B74] pl-6 py-2">
+                <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                  "I'm exhausted from constantly 'holding it together' while no one realizes I'm drowning inside. My to-do lists are flawless, my performance is stellar, but the internal pressure is crushing me."
+                </p>
+              </div>
+              <div className="border-l-4 border-[#BB8B74] pl-6 py-2">
+                <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                  "My friends call me the 'dependable one' or the 'rock,' but they don't see how my mind races with worst-case scenarios at 3 AM, or how I'm planning contingencies for conversations that haven't even happened yet."
+                </p>
+              </div>
+              <div className="border-l-4 border-[#BB8B74] pl-6 py-2">
+                <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                  "I've mastered the art of helping everyone else with their problems while deflecting attention from my own struggles. I'm so good at functioning that even I sometimes forget how anxious I really am."
+                </p>
+              </div>
+              <div className="border-l-4 border-[#BB8B74] pl-6 py-2">
+                <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                  "The thought of slowing down terrifies me more than burning out. If I'm not constantly productive or available for others, what value do I have? My worth feels tied to what I accomplish, not who I am."
+                </p>
+              </div>
+              <div className="border-l-4 border-[#BB8B74] pl-6 py-2">
+                <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                  "I've built my life around anticipating and preventing problems before they happen. The constant vigilance is exhausting, but the alternative—letting go of control—feels impossible."
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quote Section */}
+      {/* What Is Sneaky Anxiety - Card Section */}
       <section className="w-full !bg-white section-padding">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto text-center">
-            <blockquote className="text-xl md:text-2xl lg:text-3xl text-owt-supporting font-light leading-relaxed mb-4">
-              "Trauma Is Not What Happens To You, It's What Happens Inside You As A Result Of What Happened To You."
-            </blockquote>
-            <cite className="text-sm md:text-base text-owt-text-secondary font-medium tracking-wide">
-              – GABOR MATE
-            </cite>
+          <div className="max-w-5xl mx-auto">
+            <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8 text-center">
+              What Is Sneaky Anxiety?
+            </h3>
+            
+            <div className="mb-8 text-center">
+              <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                Sneaky anxiety often doesn't look like panic attacks or obvious worry. Instead, it shows up as:
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Preparation</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Overpreparation for even minor events
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Boundaries</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Difficulty saying no or setting boundaries
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Perfectionism</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Perfectionism that never feels "good enough"
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Vigilance</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Hypervigilance about potential problems
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Responsibility</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Excessive responsibility for others' emotions and needs
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Exhaustion</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    Mental exhaustion from constant planning and worrying
+                  </p>
+                </div>
+
+                <div className="bg-[#F8F6F0] rounded-2xl p-5 md:p-6 border border-[#BB8B74]/10 hover:border-[#BB8B74]/25 hover:bg-[#F8F6F0]/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-2 md:justify-center">
+                    <div className="w-2 h-2 rounded-full bg-[#BB8B74]"></div>
+                    <span className="text-sm font-medium text-[#BB8B74] uppercase tracking-wide">Physical Symptoms</span>
+                  </div>
+                  <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed md:text-center">
+                    Physical symptoms like tension headaches, digestive issues, or insomnia
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* You're Not Alone Section */}
+            <div className="bg-[#F7F8F0] rounded-[20px] p-8 md:p-10 text-center">
+              <h3 className="heading-font text-xl md:text-2xl text-owt-supporting mb-4">You're Not Alone</h3>
+              <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed max-w-3xl mx-auto mb-6 md:mb-8">
+                If these words resonate, you may be experiencing what I call "high-functioning" or "sneaky" anxiety—an anxiety that hides behind achievement, perfectionism, and caretaking. From the outside, your life may seem put-together, maybe even enviable. But inside, there's a constant hum of worry, a never-ending to-do list, and a deep fear that if you stop, everything will fall apart.
+              </p>
+              <Link href="/contact" className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
+                Schedule a Free Consultation
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* What Is EMDR Section */}
-      <section className="relative w-full !bg-white section-padding overflow-hidden">
+      {/* Why Overfunctioning Matters Section */}
+      <section className="relative w-full bg-owt-bg-primary section-padding overflow-hidden">
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
@@ -87,200 +222,232 @@ export default function Specialties() {
         </div>
 
         <div className="relative z-10 section-container">
-          <div className="section-grid-2col">
-            {/* Left column: text */}
-            <div className="flex flex-col">
-              <h2 className="heading-font text-clamp-about-title text-owt-supporting mb-4 md:mb-6">What Is EMDR?</h2>
-              <div className="mt-4 md:mt-6 flex flex-col gap-4 text-sm md:text-base text-owt-text-primary font-light">
-                <p>
-                  Eye Movement Desensitization and Reprocessing (EMDR) is a highly effective form of trauma treatment that has endless applications. You do not have to have a diagnosis of Post Traumatic Stress Disorder to benefit from EMDR. My clients seek out EMDR therapy because they have symptoms of anxiety, depression, or relationship patterns that they find puzzling, painful, or perhaps incongruent with other areas of their life.
-                </p>
-                <p>
-                  When we begin the process of EMDR together, we explore what you are experiencing present day. My role is to help guide you in identifying which past experiences may be contributing to what feels presently stuck or distressing. Then, by utilizing bilateral stimulation techniques, such as back and forth eye movement, alternating vibrating buzzers, or tapping, we process these memories together by targeting the way the memory is stored in your nervous system—through your senses, thoughts/beliefs, emotions, and body sensations.
-                </p>
-                <p>
-                  Just as trimming the top of a dandelion is only temporarily beneficial to the health of your yard's landscape, so too can less effective modalities be in addressing your symptoms. We want to identify and address the root of the issue. When approaching the present issue from this angle, the effects on your emotional health can be tremendous. EMDR is highly effective, and although it can have a reputation to be magic, it is not unicorns and rainbows, nor is it "microwave healing." However, this evidence-based practice addresses symptoms and patterns in a more targeted way, bringing down disturbances, and producing many positive ripple effects.
-                </p>
-                <p>
-                  If you can dedicate the same amount of time and energy to address the root of your current challenges and behavioral patterns in a single day rather than over the course of time through weekly sessions, an EMDR Intensive may be worth it for you.
-                </p>
-              </div>
-              <div className="pt-6 md:pt-6">
-                <Link href="/contact" className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-                  Learn About EMDR Intensives
-                </Link>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8 text-center">
+              Why Overfunctioning Matters
+            </h3>
+            
+            <div className="mb-8 text-center">
+              <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                Overfunctioning, or doing more than is necessary, healthy, or sustainable, may very well be a coping mechanism that temporarily soothes anxiety by creating an illusion of control. These patterns may serve well-intentioned protective functions, but it can overshadow other parts of you that want rest, connection and ease. Over time, overfunctioning can lead to:
+              </p>
             </div>
 
-            {/* Right column: EMDR image */}
-            <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
-              <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
-                <Image
-                  src="/assets/emdr-pathway.jpg"
-                  alt="EMDR therapy pathway illustration"
-                  fill
-                  sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
-                  className="object-cover object-center"
-                  priority={false}
-                />
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center space-y-8 md:space-y-10">
+                <div className="relative">
+                  <div className="text-lg md:text-xl text-owt-text-primary font-light leading-relaxed">
+                    You may find yourself experiencing <span className="font-medium text-[#BB8B74] relative">burnout and compassion fatigue<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#BB8B74]/30"></span></span>, feeling emotionally drained from constantly giving to others.
+                  </div>
+                </div>
+                
+                <div className="w-16 h-px bg-[#BB8B74]/20 mx-auto"></div>
+                
+                <div className="relative">
+                  <div className="text-lg md:text-xl text-owt-text-primary font-light leading-relaxed">
+                    This can lead to <span className="font-medium text-[#BB8B74] relative">resentment in relationships<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#BB8B74]/30"></span></span>, especially when your efforts go unnoticed or unreciprocated.
+                  </div>
+                </div>
+                
+                <div className="w-16 h-px bg-[#BB8B74]/20 mx-auto"></div>
+                
+                <div className="relative">
+                  <div className="text-lg md:text-xl text-owt-text-primary font-light leading-relaxed">
+                    Over time, you may notice a <span className="font-medium text-[#BB8B74] relative">disconnection from your authentic needs and desires<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#BB8B74]/30"></span></span>, losing touch with what you actually want.
+                  </div>
+                </div>
+                
+                <div className="w-16 h-px bg-[#BB8B74]/20 mx-auto"></div>
+                
+                <div className="relative">
+                  <div className="text-lg md:text-xl text-owt-text-primary font-light leading-relaxed">
+                    Despite accomplishments, you might struggle with <span className="font-medium text-[#BB8B74] relative">a sense of emptiness<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#BB8B74]/30"></span></span>, questioning your worth beyond productivity.
+                  </div>
+                </div>
+                
+                <div className="w-16 h-px bg-[#BB8B74]/20 mx-auto"></div>
+                
+                <div className="relative">
+                  <div className="text-lg md:text-xl text-owt-text-primary font-light leading-relaxed">
+                    All of this stress can manifest as <span className="font-medium text-[#BB8B74] relative">physical health consequences<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#BB8B74]/30"></span></span>, affecting your body's well-being in tangible ways.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Is An EMDR Intensive Right For Me Section */}
-      <section className="w-full bg-owt-bg-primary section-padding">
-        <div className="section-container">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="heading-font text-clamp-about-title text-owt-supporting mb-6 md:mb-8">
-              Is An EMDR Intensive Right For Me?
-            </h2>
-            <p className="text-sm md:text-base text-owt-text-primary font-light max-w-3xl mx-auto">
-              These are common reasons you may seek an intensive EMDR session as an alternative to weekly therapy.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
-            {/* Box 1 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  You are looking to make more progress in a shorter amount of time. Life can be busy and it can be hard to find the time to dedicate to your healing when you are managing a lot of other responsibilities. Setting aside one full day to be fully present for therapy may feel more appealing and feasible in this season of your life than finding a predictable weekly spot.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 2 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  Over the last few months, you experienced an acute stressful or traumatic event. You may notice it has felt disruptive to your natural rhythms or have been experiencing symptoms that have been difficult to manage. Other than this recent event, you do not feel that you have much more "back there" that needs processing or it has previously been addressed.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 3 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  You have a crystal clear idea of what you want to focus on and how EMDR may benefit your current situation.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 4 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  In the past, you have done EMDR therapy, found it beneficial, and are now looking to address a new issue.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 5 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  Currently you are in individual therapy or couple's therapy and are looking for adjunctive trauma services to complement the work you are currently doing.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 6 */}
-            <div className="bg-[#999989] rounded-[20px] p-6 md:p-8 text-white">
-              <div className="grid grid-cols-[32px_1fr] items-start gap-3">
-                <div className="mt-2">
-                  <Image src="/assets/arrow-icon.svg" alt="" width={20} height={20} aria-hidden />
-                </div>
-                <p className="text-sm md:text-base font-light leading-relaxed">
-                  You have a solid social support system, a strong array of coping strategies, and the ability to experience and tolerate difficult feelings.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Button */}
-          <div className="text-center">
-            <Link href="/contact" className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-              Schedule a Free Consultation
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Complementary Therapies Section */}
+      {/* How Therapy Can Help Section */}
       <section className="w-full !bg-white section-padding">
         <div className="section-container">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="heading-font text-clamp-about-title text-owt-supporting">
-              Complementary Therapies
-            </h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
-            {/* Somatics & Parts Card */}
-            <div className="bg-[#AFA691] rounded-[30px] p-8 md:p-12 text-white text-left">
-              <div className="flex flex-col items-start">
-                <Image 
-                  src="/assets/parts_somatics_icon.svg" 
-                  alt="Somatics & Parts icon" 
-                  width={80} 
-                  height={80}
-                  className="mb-6 md:mb-8"
-                />
-                <h3 className="heading-font text-2xl md:text-3xl mb-6 md:mb-8">
-                  Somatics & Parts
-                </h3>
-                <div className="space-y-4 md:space-y-6 text-sm md:text-base font-light leading-relaxed max-w-3xl">
-                  <p>
-                    As an Internal Family Systems (IFS)-informed therapist, I acknowledge that we all contain multiple parts that interact internally in helpful and not-so-helpful ways. Parts work is a great way to be curious about your inner world and the multiplicity of the mind. Getting acquainted with the various roles that parts take on allows you the opportunity to find alternative ways to meet their underlying needs. This work is dynamic and experiential in nature and can be illuminating, creative, and healing.
-                  </p>
-                  <p>
-                    Somatic work invites you to explore the language of your body and access the wisdom held within. It delves into the intricate relationship between our physical sensations and our psychological well-being, recognizing that the body often stores memories and emotions. Together, these approaches provide a holistic framework for increasing self-awareness, emotional regulation, and overall well-being, as you learn to integrate and honor all parts of yourself while cultivating a deeper connection to your body's wisdom.
-                  </p>
+          <div className="max-w-5xl mx-auto">
+            <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8 text-center">
+              How Therapy Can Help
+            </h3>
+            
+            <div className="mb-8 text-center">
+              <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                Together, we can:
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">1</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Meet your parts</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Recognize and understand the parts of you that overfunction, people-please, or fear failure.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* KAP & Psychedelic Integration Card */}
-            <div className="bg-[#B49E9A] rounded-[30px] p-8 md:p-12 text-white text-left">
-              <div className="flex flex-col items-start">
-                <Image 
-                  src="/assets/kap_icon.svg" 
-                  alt="KAP & Psychedelic Integration icon" 
-                  width={60} 
-                  height={60}
-                  className="mb-6 md:mb-8"
-                />
-                <h3 className="heading-font text-2xl md:text-3xl mb-6 md:mb-8">
-                  KAP & Psychedelic Integration
-                </h3>
-                <div className="text-sm md:text-base font-light leading-relaxed max-w-3xl">
-                  <p>
-                    Ketamine Assisted Psychotherapy (KAP) offers a unique opportunity to explore altered states of consciousness and access deeper layers of the psyche. Ketamine, a safe and FDA-approved medication, is administered in a supportive therapeutic setting, facilitating profound insights, emotional processing, and spiritual exploration. KAP invites you to explore other ways of knowing and being, opening the door to transformation and transcendence. While I offer KAP experiences, I can also support you in integrating a recent KAP experience that you received with another clinician or IV clinic. If you interested in integration services, an EMDR Intensive can be a supportive and effective way to do so.
-                  </p>
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">2</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Uncover the roots</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Using EMDR, we can process past experiences that contributed to these anxious adaptations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">3</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Shift beliefs and patterns</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Explore the beliefs driving your anxiety and overfunctioning, and help your parts feel safe enough to step back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">4</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Practice sustainable self-care</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Develop routines that feel possible, nourishing, and not selfish.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">5</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Cultivate self-compassion</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Counter perfectionistic tendencies and honor all parts of you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">6</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Strengthen boundaries</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Create space that respects your needs without guilt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#7e7e69] rounded-[20px] p-6 md:p-8 text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out md:col-span-2 md:justify-self-center">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-white text-[#7e7e69] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm">7</div>
+                  <div>
+                    <h4 className="heading-font text-lg mb-3">Reconnect with your worth</h4>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      Reclaim your value beyond productivity and achievement.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* My Approach Section */}
+      <section className="relative w-full bg-[#ECE7DD] section-padding overflow-hidden">
+        {/* Decorative background SVG */}
+        <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
+          <Image
+            src="/assets/Group-2 copy.svg"
+            alt=""
+            width={600}
+            height={560}
+            aria-hidden
+            priority={false}
+            className="w-[450px] md:w-[600px] rotate-180 lg:rotate-0"
+          />
+        </div>
+
+        <div className="relative z-10 section-container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8">
+              My Approach
+            </h3>
+            <div className="bg-white rounded-[20px] p-8 md:p-10 text-center">
+              <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed mb-6 md:mb-8">
+                I offer a compassionate, non‑judgmental space where your experiences are validated. By combining Internal Family Systems (IFS) with EMDR, we can gently explore the protective parts that have kept you safe while uncovering and healing the root experiences that fuel your sneaky anxiety. Together, we'll build practical strategies for sustainable well‑being—so you can feel less like you're "holding it all together" and more like you're fully present with yourself and others.
+              </p>
+              <Link href="/contact" className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
+                Get Started Today
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Section */}
+      <section className="w-full !bg-white section-padding">
+        <div className="section-container">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="relative bg-[#F8F6F0] rounded-3xl p-8 md:p-12 lg:p-16">
+              {/* Decorative quote mark */}
+              <div className="absolute top-4 left-6 md:top-6 md:left-8">
+                <div className="text-4xl md:text-5xl text-[#BB8B74]/30 font-serif leading-none">"</div>
+              </div>
+              
+              <div className="relative z-10 pt-4">
+                <blockquote className="text-xl md:text-2xl lg:text-3xl text-owt-supporting font-light leading-relaxed mb-6 md:mb-8 italic">
+                  Trauma Is Not What Happens To You, It's What Happens Inside You As A Result Of What Happened To You.
+                </blockquote>
+                
+                <div className="flex items-center justify-center space-x-3 mb-4">
+                  <div className="w-8 h-px bg-[#BB8B74]/30"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#BB8B74]/40"></div>
+                  <div className="w-8 h-px bg-[#BB8B74]/30"></div>
+                </div>
+                
+                <cite className="text-sm md:text-base text-[#BB8B74] font-medium tracking-[0.1em] uppercase">
+                  Gabor Mate
+                </cite>
+              </div>
+              
+              {/* Decorative closing quote mark */}
+              <div className="absolute bottom-4 right-6 md:bottom-6 md:right-8">
+                <div className="text-4xl md:text-5xl text-[#BB8B74]/30 font-serif leading-none">"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     </main>
   );

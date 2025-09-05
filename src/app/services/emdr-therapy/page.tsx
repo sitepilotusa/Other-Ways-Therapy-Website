@@ -103,7 +103,7 @@ export default function EMDRTherapy() {
         </div>
       </section>
 
-      {/* How EMDR Works Section */}
+      {/* What Is EMDR Section */}
       <section className="relative w-full bg-owt-bg-primary section-padding overflow-hidden">
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
@@ -122,16 +122,14 @@ export default function EMDRTherapy() {
           <div className="section-grid-2col">
             {/* Left column: text */}
             <div className="flex flex-col">
-              <h2 className="heading-font text-clamp-section-title text-owt-supporting mb-4 md:mb-6">How EMDR Transforms Healing</h2>
-              <div className="mt-4 md:mt-6 flex flex-col gap-4 text-sm md:text-base text-owt-text-primary font-light">
+              <h2 className="heading-font text-clamp-section-title text-owt-supporting mb-4 md:mb-6">What Is EMDR?</h2>
+              <div className="mt-4 md:mt-6 flex flex-col gap-6 text-sm md:text-base text-owt-text-primary font-light">
                 <p>
-                  EMDR works by activating your brain's natural healing mechanisms. When we experience trauma, memories can become "stuck," continuing to trigger distressing emotions and sensations long after the event has passed.
+                  Eye Movement Desensitization and Reprocessing (EMDR) is a highly effective form of trauma treatment that has endless applications. You do not have to have a diagnosis of Post Traumatic Stress Disorder to benefit from EMDR. My clients seek out EMDR therapy because they have symptoms of anxiety, depression, or relationship patterns that they find puzzling, painful, or perhaps incongruent with other areas of their life.
                 </p>
+                
                 <p>
-                  Through bilateral stimulation—gentle eye movements, tapping, or audio tones—EMDR helps your brain reprocess these memories, reducing their emotional charge and transforming how they affect you in the present moment.
-                </p>
-                <p>
-                  What makes EMDR unique is its ability to create lasting change without requiring you to analyze every detail. Your brain does the work naturally, promoting healing, resilience, and enhanced emotional regulation.
+                  When we begin the process of EMDR together, we explore what you are experiencing present day. My role is to help guide you in identifying which past experiences may be contributing to what feels presently stuck or distressing. Then, by utilizing bilateral stimulation techniques, such as back and forth eye movement, alternating vibrating buzzers, or tapping, we process these memories together by targeting the way the memory is stored in your nervous system—through your senses, thoughts/beliefs, emotions, and body sensations.
                 </p>
               </div>
               <div className="pt-6 md:pt-6">
@@ -145,8 +143,8 @@ export default function EMDRTherapy() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/patient.png"
-                  alt="EMDR therapy process illustration"
+                  src="/assets/IMG_3457.jpeg"
+                  alt="Nature scene"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
                   className="object-cover object-center"
@@ -154,6 +152,20 @@ export default function EMDRTherapy() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EMDR Works */}
+      <section className="w-full bg-[#ECE7DD] section-padding">
+        <div className="section-container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8">
+              Why EMDR Works
+            </h2>
+            <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+              Just as trimming the top of a dandelion is only temporarily beneficial to the health of your yard's landscape, so too can less effective modalities be in addressing your symptoms. We want to identify and address the root of the issue. When approaching the present issue from this angle, the effects on your emotional health can be tremendous. EMDR is highly effective, and although it can have a reputation to be magic, it is not unicorns and rainbows, nor is it "microwave healing." However, this evidence-based practice addresses symptoms and patterns in a more targeted way, bringing down disturbances, and producing many positive ripple effects.
+            </p>
           </div>
         </div>
       </section>

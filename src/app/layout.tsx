@@ -21,10 +21,10 @@ const siteUrl = "https://otherwaystherapy.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Other Ways Therapy — Transformative Intensives in Colorado",
+    default: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
     template: "%s | Other Ways Therapy",
   },
-  description: "Therapy intensives, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+  description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
   alternates: {
     canonical: "/",
   },
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Other Ways Therapy",
-    title: "Other Ways Therapy — Transformative Intensives in Colorado",
-    description: "Therapy intensives, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
       {
         url: "/assets/hero-background.jpg",
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Other Ways Therapy — Transformative Intensives in Colorado",
-    description: "Therapy intensives, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: ["/assets/hero-background.jpg"],
   },
   robots: {
@@ -82,22 +82,25 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: "Other Ways Therapy",
-                url: siteUrl,
-                logo:
-                  "https://otherwaystherapy.com/assets/other%20ways%20(300%20x%20300%20px)-3-cropped.svg",
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                name: "Other Ways Therapy",
-                url: siteUrl,
-              },
-            ]),
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Other Ways Therapy",
+              url: siteUrl,
+              logo:
+                "https://otherwaystherapy.com/assets/other%20ways%20(300%20x%20300%20px)-3-cropped.svg",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Other Ways Therapy",
+              url: siteUrl,
+            }),
           }}
         />
         <Header />

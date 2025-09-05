@@ -83,17 +83,16 @@ export default function Contact() {
                 {/* Self Pay Section */}
                 <div className="text-center">
                   <h3 className="heading-font text-clamp-section-title text-owt-supporting mb-4">
-                    Self Pay
+                    50–55 Minute Individual Sessions
                   </h3>
-                  <p className="text-sm md:text-base text-owt-text-primary font-medium mb-4">
-                    EMDR Intake Sessions, Extended Sessions, Intensives & Integration Sessions:<br />
-                    Self-Pay Only, Online Or In-Person
+                  <p className="text-lg md:text-xl text-owt-supporting font-semibold mb-2">
+                    $165 (Online Only)
                   </p>
-                  <p className="text-lg md:text-xl text-owt-supporting font-semibold mb-6">
-                    $200/hour Self-Pay
+                  <p className="text-sm md:text-base text-owt-text-primary font-medium mb-4">
+                    EMDR Extended Sessions & Intensives: Self‑Pay Only (Online or In‑Person)
                   </p>
                   <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-                    Please send a message through my contact form or schedule a consultation to discuss your unique situation and needs. My intensive format is generally one half to one full, in addition to an intake/planning and an integration session. If you would like a longer retreat-style intensive (several days), please contact me to discuss options.
+                    Please send a message through my contact form or schedule a consultation to discuss your unique situation and needs. My intensive format is generally one half to one full day, in addition to an intake/planning and an integration session.
                   </p>
                 </div>
 
@@ -131,6 +130,17 @@ export default function Contact() {
                       </a>{" "}
                       or call the Colorado Division of Insurance at 303-894-7490 or 1-800-930-3745.
                     </p>
+                  </div>
+                </div>
+
+                {/* Insurance Section */}
+                <div className="border-t border-owt-text-secondary/20 pt-6 md:pt-8">
+                  <h3 className="heading-font text-lg md:text-xl text-owt-supporting mb-4">
+                    Insurance
+                  </h3>
+                  <div className="space-y-4 text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+                    <p>Currently, I only accept Kaiser insurance.</p>
+                    <p>I am otherwise considered an out‑of‑network provider with other major insurance companies.</p>
                   </div>
                 </div>
                 </div>

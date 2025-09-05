@@ -83,7 +83,7 @@ export default function InternalFamilySystems() {
       introText="Internal Family Systems (IFS) therapy helps you develop a compassionate relationship with all aspects of yourself. This approach recognizes that we all contain multiple parts, each with their own wisdom and protective function, while fostering Self-leadership from your calm, curious center."
       mainSectionHeading="Understanding Your Inner System"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/client-2.png"
+      mainSectionImage="/assets/IMG_3449.jpeg"
       mainSectionImageAlt="Internal Family Systems therapy illustration"
       mainSectionCTA="Explore IFS Therapy"
       processHeading="Your IFS Journey"

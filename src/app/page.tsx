@@ -3,14 +3,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Other Ways Therapy — Transformative Intensives in Colorado",
+  title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
   description:
-    "Therapy intensives, EMDR, IFS, and ketamine preparation & integration in Colorado. In-person in Wheat Ridge and virtual statewide.",
+    "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado. In-person in Wheat Ridge and virtual statewide.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Other Ways Therapy — Transformative Intensives in Colorado",
+    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
     description:
-      "Therapy intensives, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+      "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     type: "website",
     images: [{ url: "/assets/hero-background.jpg", width: 1200, height: 630 }],
   },
@@ -39,11 +39,11 @@ export default function Home() {
                   Other Ways Therapy
                 </h1>
                 <p className="text-white font-light text-clamp-hero-subtitle max-w-4xl">
-                  Transformative Therapy Intensives in Colorado
+                  Transformative Therapy in Colorado for Anxiety and Trauma
                 </p>
                 <div className="mt-2 md:mt-3">
                   <Link
-                    href="#next"
+                    href="/contact"
                     className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
                   >
                     Schedule a Free Consultation
@@ -98,15 +98,12 @@ export default function Home() {
                   live a more present, integrated, meaningful life.
                 </p>
                 <p>
-                  Whether you’re navigating the effects of trauma, anxiety, relational challenges, experiencing a life
+                  Whether you're navigating the effects of trauma, anxiety, relationship challenges, experiencing a life
                   transition, or seeking personal growth, I offer a safe space for you to find your own path towards
                   healing.
                 </p>
                 <p>
-                  As a Licensed Professional Counselor, Certified EMDR Clinician, and Founder of Other Ways Therapy, I
-                  honor the diversity of human experience and recognize that there is no one-size-fits-all approach to
-                  healing. My integrative therapy approach combines evidence-based modalities with a deep reverence for
-                  your innate wisdom and resilience.
+                  As a Licensed Professional Counselor, Certified EMDR Clinician, IFS trained therapist, Ketamine Assisted Psychotherapy trained and Founder of Other Ways Therapy, I honor the diversity of human experience and recognize that there is no one-size-fits-all approach to healing. My integrative therapy approach combines evidence-based modalities with a deep reverence for your innate wisdom and resilience.
                 </p>
               </div>
               <div className="pt-6 md:pt-6">
@@ -135,56 +132,61 @@ export default function Home() {
 
       
 
-      {/* Narrative Section (moved below About Me) */}
-      <section className="w-full bg-owt-bg-accent section-padding">
-        <div className="section-container">
-          <div className="mx-auto max-w-3xl card-rounded-sm bg-owt-secondary-brown p-6 md:p-10 lg:p-12">
-            <div className="grid grid-cols-[56px_1fr] md:grid-cols-[64px_1fr] items-start gap-0">
-              {/* Left column: arrow aligned to top */}
-              <div className="pl-2 md:pl-3 mt-2 md:mt-2">
-                <Image src="/assets/arrow-icon.svg" alt="" width={24} height={24} aria-hidden />
+      {/* Narrative Section (updated to soft neutral background with leaf stencil) */}
+      <section className="relative w-full bg-[#ECE7DD] section-padding overflow-hidden">
+        {/* Decorative background SVG */}
+        <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
+          <Image
+            src="/assets/Group-2 copy.svg"
+            alt=""
+            width={600}
+            height={560}
+            aria-hidden
+            priority={false}
+            className="w-[450px] md:w-[600px] rotate-180 lg:rotate-0"
+          />
+        </div>
+
+        <div className="relative z-10 section-container">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="heading-font text-clamp-about-title text-[var(--owt-supporting)] mb-6 md:mb-8">
+              What shifts are you hoping to see?
+            </h2>
+            <div className="flex flex-col gap-6 md:gap-8 text-sm md:text-base text-owt-text-primary font-light">
+              <p>
+                You've reached a point in your life where you're craving true internal change. This may not be your first
+                time in therapy. You've invested time and energy into your healing journey, yet you still find yourself
+                hitting a wall. You're thriving in many areas of your life, but you're also surprised by the ways you feel
+                stuck—unsure why certain patterns continue to show up.
+              </p>
+              
+              <p>
+                Often, hidden anxiety is part of the picture. It has a way of being sneaky, making it hard to recognize even
+                when you're the one living with it. On the outside, you might look calm and capable, but inside you're
+                working overtime just to hold things together. That effort can feel exhausting.
+              </p>
+              
+              <div className="space-y-4 md:space-y-5 my-8 md:my-10">
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>Maybe you get triggered seemingly out of nowhere.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>Your inner critic feels relentless, and you don't know how else to respond to yourself.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>No matter what you accomplish, a quiet voice insists you're not enough.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>It can show up in your relationships, too. You may feel that push‑and‑pull tug‑of‑war, slip into people‑pleaser mode, or lose touch with your own needs. Sometimes you second‑guess your intuition or decisions because prioritizing others has always come first.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>And when the emotions get too strong, you might find yourself shutting down.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>You'd rather alphabetize your spice rack than sit with your feelings.</p></div>
+                <div className="border-l-2 border-[#BB8B74] pl-4 py-1"><p>It feels safer to stay in your head—analyzing and intellectualizing—than to drop into what you feel. Or maybe you're not even sure how.</p></div>
               </div>
-              {/* Right column: all text, aligned to top */}
-              <div className="text-white font-light leading-relaxed space-y-4 md:space-y-6">
-                <p className="font-semibold">
-                  You have reached a point in your life where you are craving true internal change.
-                </p>
-                <p>
-                  This may not be your first rodeo in therapy. You’ve dedicated time and energy to your healing journey,
-                  yet you still find yourself hitting a wall.
-                </p>
-                <p>
-                  I trust that you are thriving in many areas of your life, but sometimes you’re surprised by the ways you
-                  feel stuck—unclear why certain patterns persist.
-                </p>
-                <p>
-                  Humans and our nervous systems—we’re funny like that.
-                </p>
-                <p>
-                  Our thoughts, emotions, and sensations can feel like big sticklers, showing up at inconvenient times. But
-                  if we view them as valuable communication from our mind and body, and we learn how to work with that
-                  information, everything can change.
-                </p>
-                <p>
-                  Yet, trauma and chronic stress have a way of disrupting this flow of awareness.
-                </p>
-                <p>
-                  Our past memories start shaping our present experiences and our vision of the future. This isn’t something
-                  we can just think our way out of.
-                </p>
-                <p>
-                  The modalities I use help you process experiences in a way that allows you to move forward—without being
-                  held back by the past.
-                </p>
-                <p>
-                  Trust me, there are effective ways to heal and other ways to live.
-                </p>
-                <p>
-                  I love collaboratively tailoring a healing plan that considers your unique patterns and stuck points—ones
-                  that may no longer be serving you. Together, we’ll identify their origins so you can finally process what
-                  didn’t have a chance to be integrated before.
-                </p>
-              </div>
+              
+              <p>
+                This kind of anxiety doesn't always make a scene, but it quietly chips away at your peace until it feels
+                overwhelming.
+              </p>
+              
+              <p>
+                Does this sound familiar? It can be so disruptive when you're trying to live the life you want but feel like
+                there's a glass wall between where you are and where you long to be.
+              </p>
+              
+              <p className="text-center text-lg font-medium text-[#BB8B74] mt-6">You deserve relief.</p>
             </div>
           </div>
         </div>

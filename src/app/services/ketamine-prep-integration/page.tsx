@@ -23,15 +23,15 @@ export default function KetamineIntegration() {
     },
     {
       step: "STEP 2:",
-      title: "Guided Experience",
-      description: "During your session, I provide supportive presence and guidance, helping you navigate the altered state with safety and intention.",
-      icon: "/assets/intensive_icon.svg"
-    },
-    {
-      step: "STEP 3:",
       title: "Integration Processing",
       description: "We work together to understand and integrate the insights, emotions, and experiences that emerged during your ketamine session.",
       icon: "/assets/integration_icon.svg"
+    },
+    {
+      step: "STEP 3:",
+      title: "IFS Parts Exploration",
+      description: "Using Internal Family Systems, we explore the parts of you that surfaced during the experience and cultivate Self‑leadership and compassion.",
+      icon: "/assets/parts_somatics_icon.svg"
     },
     {
       step: "STEP 4:",
@@ -44,13 +44,16 @@ export default function KetamineIntegration() {
   const mainSectionContent = (
     <>
       <p>
-        Ketamine Assisted Psychotherapy (KAP) offers a unique opportunity to explore altered states of consciousness and access deeper layers of healing. This FDA-approved medication, when used in a therapeutic setting, can facilitate profound insights and emotional breakthroughs.
+        Ketamine therapy can open doorways to profound healing and insight. I provide comprehensive support before and after your experience, helping you prepare mindfully and integrate meaningfully for lasting transformation.
       </p>
       <p>
-        Preparation is crucial for a meaningful ketamine experience. We work together to set intentions, address any concerns, and create the optimal mindset for your journey. During the session, I provide supportive guidance to help you navigate the experience safely.
+        Have you recently completed ketamine treatment at an IV clinic or through an at‑home service? While ketamine can offer therapeutic breakthroughs, the real transformation often happens in the weeks and months that follow—through thoughtful integration of your experiences. Many people receive minimal integration support after their sessions, leaving valuable insights and healing potential unexplored.
       </p>
       <p>
-        Integration is equally important—the real work often begins after the session ends. We process what emerged, helping you understand and incorporate new insights into your daily life, relationships, and ongoing healing journey.
+        While I trained in Ketamine‑Assisted Psychotherapy (KAP), I do not currently provide the ketamine treatment itself. I offer dedicated preparation and integration sessions designed to maximize the therapeutic benefits of your journey.
+      </p>
+      <p>
+        EMDR can be particularly powerful for processing trauma‑related content that may have surfaced, and using IFS we’ll explore the parts of you that may have emerged—helping you develop a compassionate relationship with all aspects of yourself.
       </p>
     </>
   );
@@ -78,11 +81,11 @@ export default function KetamineIntegration() {
       />
       <ServicePageLayout
       pageTitle="Ketamine Preparation & Integration"
-      introHeading="Sacred Medicine with Therapeutic Support"
-      introText="Ketamine therapy can open doorways to profound healing and insight. I provide comprehensive support before, during, and after your experience, helping you prepare mindfully and integrate meaningfully for lasting transformation."
+      introHeading="Ketamine with Therapeutic Support"
+      introText="Comprehensive preparation and integration support to help you make meaning from your ketamine experience—even if it occurred with another provider."
       mainSectionHeading="The KAP Process"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/patient-3.png"
+      mainSectionImage="/assets/IMG_3415.jpeg"
       mainSectionImageAlt="Ketamine therapy preparation and integration"
       mainSectionCTA="Learn About KAP"
       processHeading="Your KAP Journey"

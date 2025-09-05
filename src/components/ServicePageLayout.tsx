@@ -179,7 +179,7 @@ export function ServicePageLayout({
               href="/contact"
               className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
             >
-              Begin Your Healing Journey
+              {finalCTA}
             </Link>
           </div>
         </div>

@@ -32,7 +32,7 @@ export default function Services() {
       title: "Ketamine Preparation & Integration",
       description: "Preparation, support, and post-session integration to translate insights into daily life.",
       icon: "/assets/integration_icon.svg", 
-      href: "/services/ketamine-integration"
+      href: "/services/ketamine-prep-integration"
     },
     {
       title: "EMDR Intensives",
