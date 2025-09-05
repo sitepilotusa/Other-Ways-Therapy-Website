@@ -2,17 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+const siteUrl = process.env.VERCEL_URL 
+  ? `https://${process.env.VERCEL_URL}`
+  : process.env.NODE_ENV === 'development' 
+  ? 'http://localhost:3000'
+  : "https://otherwaystherapy.com";
+
 export const metadata: Metadata = {
-  title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+  title: "EMDR & IFS Therapy in Colorado | Other Ways Therapy",
   description:
     "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado. In-person in Wheat Ridge and virtual statewide.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    title: "EMDR & IFS Therapy in Colorado | Other Ways Therapy",
     description:
       "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     type: "website",
-    images: [{ url: "/assets/therapy-healing-landscape-background.jpg", width: 1200, height: 630 }],
+    images: [
+      {
+        url: `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Other Ways Therapy",
+        type: "image/jpeg",
+      },
+    ],
   },
 };
 

@@ -16,12 +16,21 @@ const bodyFont = Bricolage_Grotesque({
   display: "swap",
 });
 
-const siteUrl = "https://otherwaystherapy.com";
+const siteUrl = process.env.VERCEL_URL 
+  ? `https://${process.env.VERCEL_URL}`
+  : process.env.NODE_ENV === 'development' 
+  ? 'http://localhost:3000'
+  : "https://otherwaystherapy.com";
+
+const verification: Metadata["verification"] =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION as string }
+    : undefined;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    default: "Other Ways Therapy | EMDR & IFS in Colorado",
     template: "%s | Other Ways Therapy",
   },
   description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
@@ -51,11 +60,11 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Other Ways Therapy",
-    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
       {
-        url: "/other-ways-therapy-social-share-image.jpg",
+        url: `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy",
@@ -65,9 +74,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
+    title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
-    images: ["/other-ways-therapy-social-share-image.jpg"],
+    images: [`${siteUrl}/other-ways-therapy-social-share-image.jpg`],
   },
   robots: {
     index: true,
@@ -81,6 +90,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  ...(verification ? { verification } : {}),
 };
 
 export const viewport: Viewport = {
@@ -106,6 +116,32 @@ export default function RootLayout({
               url: siteUrl,
               logo:
                 "https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Other Ways Therapy",
+              url: siteUrl,
+              image:
+                "https://otherwaystherapy.com/assets/other-ways-therapy-logo.png",
+              telephone: "+1-720-863-6373",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "4251 Kipling St. #430",
+                addressLocality: "Wheat Ridge",
+                addressRegion: "CO",
+                postalCode: "80033",
+                addressCountry: "US",
+              },
+              areaServed: {
+                "@type": "State",
+                name: "Colorado",
+              },
             }),
           }}
         />
