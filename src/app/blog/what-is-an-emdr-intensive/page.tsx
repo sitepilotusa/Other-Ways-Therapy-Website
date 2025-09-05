@@ -36,12 +36,12 @@ const jsonLd = {
     name: 'Other Ways Therapy',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://otherwaystherapy.com/assets/other-ways-300-x-300-px.webp'
+      url: 'https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg'
     }
   },
   datePublished: '2025-08-19',
   dateModified: '2025-08-19',
-  image: 'https://otherwaystherapy.com/assets/blog-img.jpg',
+  image: 'https://otherwaystherapy.com/assets/emdr-intensive-therapy-blog-image.jpg',
   description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
 };
 
@@ -56,7 +56,7 @@ export default function BlogPost() {
         {/* Hero Section */}
         <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
           <Image
-            src="/assets/hero-background.jpg"
+            src="/assets/therapy-healing-landscape-background.jpg"
             alt="Other Ways Therapy Blog"
             fill
             priority
@@ -87,7 +87,7 @@ export default function BlogPost() {
                 <div className="flex items-center gap-3">
                   <div className="relative rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
                     <Image
-                      src="/assets/Molly Pike Therapist Photo_edited.jpg"
+                      src="/assets/molly-pike-therapist-portrait.jpg"
                       alt="Molly Pike"
                       fill
                       sizes="40px"
@@ -102,7 +102,7 @@ export default function BlogPost() {
               <div className="mb-8 md:mb-12 flex justify-center">
                 <div className="relative w-full max-w-md md:max-w-lg h-[300px] md:h-[400px] lg:h-[500px] rounded-[20px] overflow-hidden">
                   <Image
-                    src="/assets/blog-img.jpg"
+                    src="/assets/emdr-intensive-therapy-blog-image.jpg"
                     alt="EMDR Intensive therapy session"
                     fill
                     sizes="(min-width: 1024px) 896px, (min-width: 768px) 768px, 100vw"
@@ -147,7 +147,7 @@ export default function BlogPost() {
                   <div className="grid grid-cols-[56px_1fr] md:grid-cols-[64px_1fr] items-start gap-0">
                     {/* Left column: arrow aligned to top */}
                     <div className="pl-2 md:pl-3 mt-2 md:mt-2">
-                      <Image src="/assets/arrow-icon.svg" alt="" width={24} height={24} aria-hidden />
+                      <Image src="/assets/arrow-right-icon.svg" alt="" width={24} height={24} aria-hidden />
                     </div>
                     {/* Right column: text */}
                     <div className="text-white font-light leading-relaxed space-y-4 md:space-y-6">
@@ -169,7 +169,7 @@ export default function BlogPost() {
                   <div className="flex-shrink-0 mx-auto md:mx-0">
                     <div className="relative rounded-full overflow-hidden w-24 h-24 md:w-32 md:h-32">
                       <Image
-                        src="/assets/Molly Pike Therapist Photo_edited.jpg"
+                        src="/assets/molly-pike-therapist-portrait.jpg"
                         alt="Molly Pike, Licensed Professional Counselor"
                         fill
                         sizes="(min-width: 768px) 128px, 96px"

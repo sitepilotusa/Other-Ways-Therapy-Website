@@ -20,25 +20,25 @@ export default function InternalFamilySystems() {
       step: "STEP 1:",
       title: "Parts Exploration",
       description: "We begin by getting curious about the different parts of yourself—the protectors, exiles, and firefighters that shape your inner world.",
-      icon: "/assets/planning_icon.svg"
+      icon: "/assets/therapy-planning-icon.svg"
     },
     {
       step: "STEP 2:",
       title: "Self-Leadership Development",
       description: "Together, we help you access your core Self—the calm, curious, compassionate center that can lead your internal system with wisdom.",
-      icon: "/assets/consultation_icon.svg"
+      icon: "/assets/emdr-consultation-icon.svg"
     },
     {
       step: "STEP 3:",
       title: "Parts Integration",
       description: "We work to understand what each part needs and help them find new, healthier ways to fulfill their protective roles.",
-      icon: "/assets/integration_icon.svg"
+      icon: "/assets/emdr-integration-icon.svg"
     },
     {
       step: "STEP 4:",
       title: "Harmonious Living",
       description: "You develop the ability to live from Self-leadership, creating internal harmony and more authentic relationships with others.",
-      icon: "/assets/parts_somatics_icon.svg"
+      icon: "/assets/internal-family-systems-somatics-icon.svg"
     }
   ];
 
@@ -83,7 +83,7 @@ export default function InternalFamilySystems() {
       introText="Internal Family Systems (IFS) therapy helps you develop a compassionate relationship with all aspects of yourself. This approach recognizes that we all contain multiple parts, each with their own wisdom and protective function, while fostering Self-leadership from your calm, curious center."
       mainSectionHeading="Understanding Your Inner System"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/IMG_3449.jpeg"
+      mainSectionImage="/assets/internal-family-systems-service-page-image.jpg"
       mainSectionImageAlt="Internal Family Systems therapy illustration"
       mainSectionCTA="Explore IFS Therapy"
       processHeading="Your IFS Journey"

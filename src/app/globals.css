@@ -85,11 +85,18 @@ html {
 .btn-light {
   background: var(--owt-btn-light-bg);
   color: var(--owt-btn-light-text);
+  border: 1px solid var(--owt-btn-light-bg);
+  transition: all 0.3s ease;
+}
+.btn-light:hover, .btn-light:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .btn-dark {
   background: var(--owt-btn-dark-bg);
   color: var(--owt-btn-dark-text);
   border: 1px solid var(--owt-btn-dark-bg);
+  transition: all 0.3s ease;
 }
 
 .btn-dark:hover, .btn-dark:focus-visible {

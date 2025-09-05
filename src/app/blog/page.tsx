@@ -21,7 +21,7 @@ export default function Blog() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="Blog at Other Ways Therapy"
           fill
           priority
@@ -53,7 +53,7 @@ export default function Blog() {
                 <Link href="/blog/what-is-an-emdr-intensive" className="block">
                   <div className="relative h-48 md:h-56">
                     <Image
-                      src="/assets/blog-img.jpg"
+                      src="/assets/emdr-intensive-therapy-blog-image.jpg"
                       alt="What is an EMDR Intensive?"
                       fill
                       sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"
@@ -79,7 +79,7 @@ export default function Blog() {
                 <Link href="/blog/life-uh-finds-a-way" className="block">
                   <div className="relative h-48 md:h-56">
                     <Image
-                      src="/assets/IMG_3150-1-scaled.jpg"
+                      src="/assets/molly-pike-licensed-counselor-portrait.jpg"
                       alt="Understanding symptoms and behaviors through an EMDR lens"
                       fill
                       sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"

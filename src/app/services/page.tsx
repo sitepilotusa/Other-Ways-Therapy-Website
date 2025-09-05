@@ -19,31 +19,31 @@ export default function Services() {
     {
       title: "EMDR Therapy",
       description: "Evidence-based processing to resolve stuck memories and patterns. Gentle, structured, and paced for safety.",
-      icon: "/assets/planning_icon.svg",
+      icon: "/assets/therapy-planning-icon.svg",
       href: "/services/emdr-therapy"
     },
     {
       title: "Internal Family Systems Therapy", 
       description: "Explore parts, foster Self-leadership, and integrate mind–body wisdom.",
-      icon: "/assets/parts_somatics_icon.svg",
+      icon: "/assets/internal-family-systems-somatics-icon.svg",
       href: "/services/internal-family-systems"
     },
     {
       title: "Ketamine Preparation & Integration",
       description: "Preparation, support, and post-session integration to translate insights into daily life.",
-      icon: "/assets/integration_icon.svg", 
+      icon: "/assets/emdr-integration-icon.svg", 
       href: "/services/ketamine-prep-integration"
     },
     {
       title: "EMDR Intensives",
       description: "Condensed 3–5 hour sessions for focused, accelerated work.",
-      icon: "/assets/intensive_icon.svg",
+      icon: "/assets/emdr-intensives-icon.svg",
       href: "/services/emdr-intensives"
     },
     {
       title: "EMDR Consultation for Therapists",
       description: "EMDRIA-informed consultation to support clinicians toward competency and certification.",
-      icon: "/assets/consultation_icon.svg",
+      icon: "/assets/emdr-consultation-icon.svg",
       href: "/services/emdr-consultation"
     }
   ];
@@ -53,7 +53,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="Services at Other Ways Therapy"
           fill
           priority

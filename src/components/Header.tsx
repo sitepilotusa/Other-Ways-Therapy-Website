@@ -185,7 +185,7 @@ export function Header() {
             <span className="sr-only">Other Ways Therapy</span>
             <div className="relative size-40">
               <Image
-                src="/assets/other ways (300 x 300 px)-3-cropped.svg"
+                src="/assets/other-ways-therapy-logo.svg"
                 alt="Other Ways Therapy logo"
                 fill
                 sizes="175px"
@@ -374,7 +374,7 @@ export function Header() {
         <Link href="/" className="block rounded-full bg-owt-bg-secondary p-1.5 shadow-sm">
           <div className="relative rounded-full overflow-hidden size-32 md:size-36 lg:size-40">
             <Image
-              src="/assets/other ways (300 x 300 px)-3.png"
+              src="/assets/other-ways-therapy-logo.png"
               alt="Other Ways Therapy logo"
               fill
               sizes="(min-width: 1024px) 10rem, (min-width: 768px) 9rem, 8rem"
@@ -404,7 +404,7 @@ export function Header() {
             <div className="mt-5 flex justify-center">
               <div className="relative size-40 rounded-full overflow-hidden shadow-sm ring-1 ring-black/5">
                 <Image
-                  src="/assets/other ways (300 x 300 px)-3.png"
+                  src="/assets/other-ways-therapy-logo.png"
                   alt="Other Ways Therapy logo"
                   fill
                   sizes="160px"

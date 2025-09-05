@@ -19,25 +19,25 @@ export default function KetamineIntegration() {
       step: "STEP 1:",
       title: "Preparation & Intention Setting",
       description: "We prepare your mind and body for the experience, setting clear intentions and establishing safety protocols for your journey.",
-      icon: "/assets/planning_icon.svg"
+      icon: "/assets/therapy-planning-icon.svg"
     },
     {
       step: "STEP 2:",
       title: "Integration Processing",
       description: "We work together to understand and integrate the insights, emotions, and experiences that emerged during your ketamine session.",
-      icon: "/assets/integration_icon.svg"
+      icon: "/assets/emdr-integration-icon.svg"
     },
     {
       step: "STEP 3:",
       title: "IFS Parts Exploration",
       description: "Using Internal Family Systems, we explore the parts of you that surfaced during the experience and cultivate Self‑leadership and compassion.",
-      icon: "/assets/parts_somatics_icon.svg"
+      icon: "/assets/internal-family-systems-somatics-icon.svg"
     },
     {
       step: "STEP 4:",
       title: "Ongoing Support",
       description: "Continued support helps you translate insights into lasting change, incorporating new perspectives into your daily life and relationships.",
-      icon: "/assets/consultation_icon.svg"
+      icon: "/assets/emdr-consultation-icon.svg"
     }
   ];
 
@@ -85,7 +85,7 @@ export default function KetamineIntegration() {
       introText="Comprehensive preparation and integration support to help you make meaning from your ketamine experience—even if it occurred with another provider."
       mainSectionHeading="The KAP Process"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/IMG_3415.jpeg"
+      mainSectionImage="/assets/ketamine-preparation-integration-service-image.jpg"
       mainSectionImageAlt="Ketamine therapy preparation and integration"
       mainSectionCTA="Learn About KAP"
       processHeading="Your KAP Journey"

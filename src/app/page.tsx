@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     type: "website",
-    images: [{ url: "/assets/hero-background.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/assets/therapy-healing-landscape-background.jpg", width: 1200, height: 630 }],
   },
 };
 
@@ -22,7 +22,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="Therapeutic landscape background for Other Ways Therapy"
           fill
           priority
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="absolute left-1/2 -translate-x-1/2 bottom-6 md:bottom-10">
           <Link href="#next" aria-label="Scroll to next section">
             <Image
-              src="/assets/scroll_down_button.svg"
+              src="/assets/scroll-down-arrow-icon.svg"
               alt="Scroll down"
               width={28}
               height={28}
@@ -76,7 +76,7 @@ export default function Home() {
         {/* Decorative background SVG from the top-right corner */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/molly-pike.jpg"
+                  src="/assets/molly-pike-portrait.jpg"
                   alt="Molly Pike, founder of Other Ways Therapy"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
@@ -137,7 +137,7 @@ export default function Home() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -195,7 +195,7 @@ export default function Home() {
       {/* EMDR Intensives Section */}
       <section
         className="relative w-full !bg-white section-padding overflow-hidden bg-no-repeat bg-right bg-cover"
-        style={{ backgroundImage: "url('/assets/edmr_intensives_bg.png')" }}
+        style={{ backgroundImage: "url('/assets/emdr-intensives-background.png')" }}
       >
         <div className="relative z-10 section-container">
           <div className="section-grid-2col">
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-start mt-8 md:mt-12 lg:mt-0 order-2 lg:order-1">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/EDMR_img.jpg"
+                  src="/assets/emdr-intensives-image.jpg"
                   alt="EMDR Intensives"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
@@ -238,7 +238,7 @@ export default function Home() {
           {/* Decorative background SVG (under boxes, over bg color) */}
           <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[20%] z-0 opacity-90">
             <Image
-              src="/assets/Group-2 copy.svg"
+              src="/assets/decorative-leaf-pattern-left.svg"
               alt=""
               width={600}
               height={560}
@@ -253,7 +253,7 @@ export default function Home() {
               {/* Box 1: EMDR */}
               <div className="flex h-full w-full flex-col items-center text-center card-rounded bg-owt-tertiary-brown text-white p-6 md:p-8 lg:p-10">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/edmr_icon.svg" alt="EMDR icon" width={55} height={55} className="block mx-auto" />
+                  <Image src="/assets/emdr-therapy-icon.svg" alt="EMDR icon" width={55} height={55} className="block mx-auto" />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">EMDR</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">
@@ -271,7 +271,7 @@ export default function Home() {
               {/* Box 2: Parts & Somatics */}
               <div className="flex h-full w-full flex-col items-center text-center card-rounded bg-owt-secondary-brown text-white p-6 md:p-8 lg:p-10">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/parts_somatics_icon.svg" alt="Parts and Somatics icon" width={85} height={85} className="block mx-auto" />
+                  <Image src="/assets/internal-family-systems-somatics-icon.svg" alt="Parts and Somatics icon" width={85} height={85} className="block mx-auto" />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">Parts & Somatics</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">
@@ -289,7 +289,7 @@ export default function Home() {
               {/* Box 3: KAP */}
               <div className="flex h-full w-full flex-col items-center text-center rounded-[40px] md:rounded-[80px] lg:rounded-[100px] bg-owt-tertiary-brown text-white p-6 md:p-8 lg:p-10 md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/kap_icon.svg" alt="KAP icon" width={45} height={45} className="block mx-auto" />
+                  <Image src="/assets/ketamine-assisted-psychotherapy-icon.svg" alt="KAP icon" width={45} height={45} className="block mx-auto" />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">KAP</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">

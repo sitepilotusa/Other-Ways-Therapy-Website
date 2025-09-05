@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       description: `Compassionate, effective therapy intensives for individuals and families in ${town}. In-person in Wheat Ridge and virtual statewide.`,
       images: [
         {
-          url: '/assets/hero-background.jpg',
+          url: '/assets/therapy-healing-landscape-background.jpg',
           width: 1200,
           height: 630,
           alt: `Therapy in ${town} - Other Ways Therapy`,
@@ -97,22 +97,22 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
     {
       title: "Personalized Intensives",
       description: "Tailored therapy intensives designed around your goals, pace, and schedule.",
-      icon: "/assets/intensive_icon.svg",
+      icon: "/assets/emdr-intensives-icon.svg",
     },
     {
       title: "Accessible Virtual Care",
       description: "Secure telehealth sessions available anywhere in Colorado for flexibility and ease.",
-      icon: "/assets/consultation_icon.svg",
+      icon: "/assets/emdr-consultation-icon.svg",
     },
     {
       title: "Compassionate Support",
       description: "Trauma-informed, attuned care that honors your experience and nervous system.",
-      icon: "/assets/integration_icon.svg",
+      icon: "/assets/emdr-integration-icon.svg",
     },
     {
       title: "Front Range Convenience",
       description: `In-person sessions at our Wheat Ridge office—centrally located near ${town}.`,
-      icon: "/assets/planning_icon.svg",
+      icon: "/assets/therapy-planning-icon.svg",
     },
   ];
 
@@ -146,7 +146,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
       {/* Hero Section (styled like Home) */}
       <section className="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt={`Therapy in ${town} - Other Ways Therapy`}
           fill
           priority
@@ -182,7 +182,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
         <div className="absolute left-1/2 -translate-x-1/2 bottom-6 md:bottom-10">
           <Link href="#next" aria-label="Scroll to next section">
             <Image
-              src="/assets/scroll_down_button.svg"
+              src="/assets/scroll-down-arrow-icon.svg"
               alt="Scroll down"
               width={28}
               height={28}
@@ -251,7 +251,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[15%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}

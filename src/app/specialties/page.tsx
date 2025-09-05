@@ -16,7 +16,7 @@ export default function Specialties() {
       {/* Hero Section - Specialties */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="Specialties at Other Ways Therapy"
           fill
           priority
@@ -57,7 +57,7 @@ export default function Specialties() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -211,7 +211,7 @@ export default function Specialties() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -386,7 +386,7 @@ export default function Specialties() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute -right-16 md:left-16 lg:left-24 top-2/5 -translate-y-2/5 lg:bottom-auto lg:top-0 lg:-translate-y-[20%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}

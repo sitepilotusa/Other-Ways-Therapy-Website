@@ -21,25 +21,25 @@ export default function EMDRTherapy() {
       step: "STEP 1:",
       title: "Assessment & Preparation",
       description: "We begin by understanding your unique story, establishing safety, and building the resources you need for successful processing.",
-      icon: "/assets/planning_icon.svg"
+      icon: "/assets/therapy-planning-icon.svg"
     },
     {
       step: "STEP 2:",
       title: "Target Identification",
       description: "Together, we identify specific memories or experiences that are contributing to your current challenges and distress.",
-      icon: "/assets/intensive_icon.svg"
+      icon: "/assets/emdr-intensives-icon.svg"
     },
     {
       step: "STEP 3:",
       title: "Processing & Integration",
       description: "Using bilateral stimulation, we help your brain process and integrate these experiences in a new, adaptive way.",
-      icon: "/assets/integration_icon.svg"
+      icon: "/assets/emdr-integration-icon.svg"
     },
     {
       step: "STEP 4:",
       title: "Future Resilience",
       description: "We strengthen your capacity to handle future challenges with confidence, using the insights and healing you've gained.",
-      icon: "/assets/consultation_icon.svg"
+      icon: "/assets/emdr-consultation-icon.svg"
     }
   ];
 
@@ -67,7 +67,7 @@ export default function EMDRTherapy() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="EMDR Therapy at Other Ways Therapy"
           fill
           priority
@@ -108,7 +108,7 @@ export default function EMDRTherapy() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -143,7 +143,7 @@ export default function EMDRTherapy() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/IMG_3457.jpeg"
+                  src="/assets/emdr-therapy-session-image.jpg"
                   alt="Nature scene"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"

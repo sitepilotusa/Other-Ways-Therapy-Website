@@ -34,7 +34,7 @@ export default function AreasWeServe() {
       {/* Hero Section (matches non-home pages) */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="Colorado landscape background for Areas We Serve"
           fill
           priority

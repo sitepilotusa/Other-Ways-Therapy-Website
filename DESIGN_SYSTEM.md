@@ -122,7 +122,7 @@
 ### Hero Section Pattern
 ```html
 <section class="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[100px]">
-  <Image src="/assets/hero-bg.jpg" alt="" fill priority className="object-cover" />
+  <Image src="/assets/therapy-healing-landscape-background.jpg" alt="" fill priority className="object-cover" />
   <div class="absolute inset-0">
     <div class="section-container h-full">
       <div class="h-full flex items-center justify-center">
@@ -161,7 +161,7 @@
       <!-- Right column: Image -->
       <div class="flex justify-center lg:justify-end">
         <div class="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem]">
-          <Image src="/assets/image.jpg" alt="" fill className="object-cover" />
+          <Image src="/assets/footer-background-texture.png" alt="" fill className="object-cover" />
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@
   <div class="section-container">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
       <div class="card-rounded bg-owt-secondary-brown text-white p-6 md:p-8">
-        <Image src="/assets/icon.svg" alt="" width={55} height={55} className="mb-4 mx-auto" />
+        <Image src="/assets/emdr-therapy-icon.svg" alt="" width={55} height={55} className="mb-4 mx-auto" />
         <h3 class="heading-font text-2xl md:text-3xl text-center">Card Title</h3>
         <p class="mt-4 text-sm md:text-base font-light text-center">Card content...</p>
         <div class="pt-6 text-center">

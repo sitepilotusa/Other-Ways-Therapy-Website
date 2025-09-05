@@ -21,7 +21,7 @@ export default function About() {
       {/* Hero Section - About Me */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="About Other Ways Therapy"
           fill
           priority
@@ -48,7 +48,7 @@ export default function About() {
         {/* Decorative background SVG on the left */}
         <div className="pointer-events-none select-none absolute left-8 md:left-16 lg:left-24 top-0 -translate-y-[30%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -64,7 +64,7 @@ export default function About() {
             <div className="flex justify-center lg:justify-center mt-4 md:mt-12 lg:mt-0 order-1 lg:order-1">
               <div className="relative rounded-full overflow-hidden w-[26rem] h-[26rem] md:w-[24rem] md:h-[24rem] lg:w-[26rem] lg:h-[26rem] !bg-white/50">
                 <Image
-                  src="/assets/Molly Pike Therapist Photo_edited.jpg"
+                  src="/assets/molly-pike-therapist-portrait.jpg"
                   alt="Molly Pike, Licensed Professional Counselor"
                   fill
                   sizes="(min-width: 1280px) 26rem, (min-width: 1024px) 24rem, 26rem"
@@ -103,7 +103,7 @@ export default function About() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -149,7 +149,7 @@ export default function About() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -170,7 +170,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/LGBTQ Inclusive.jpg" 
+                  src="/assets/lgbtq-inclusive-badge.jpg" 
                   alt="Licensed Professional Counselor badge" 
                   width={80} 
                   height={80}
@@ -196,7 +196,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/EMDRConsultantBadge.jpg" 
+                  src="/assets/emdr-approved-consultant-badge.jpg" 
                   alt="EMDRIA Approved Consultant badge" 
                   width={80} 
                   height={80}
@@ -217,7 +217,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/TRIPPCertified (1).jpg" 
+                  src="/assets/tripp-certified-badge.jpg" 
                   alt="Ketamine Assisted Psychotherapy Certified badge" 
                   width={80} 
                   height={80}
@@ -238,7 +238,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/EMDRCertifiedBadge.jpg" 
+                  src="/assets/emdr-certified-therapist-badge.jpg" 
                   alt="EMDR Certified badge" 
                   width={80} 
                   height={80}

@@ -20,25 +20,25 @@ export default function EMDRIntensives() {
       step: "STEP 1:",
       title: "Pre-Intensive Consultation",
       description: "We meet beforehand to assess your readiness, establish goals, and ensure you have the support systems needed for intensive work.",
-      icon: "/assets/consultation_icon.svg"
+      icon: "/assets/emdr-consultation-icon.svg"
     },
     {
       step: "STEP 2:",
       title: "Intensive Preparation",
       description: "The day begins with grounding, resource building, and creating a safe container for the deep work we'll be doing together.",
-      icon: "/assets/planning_icon.svg"
+      icon: "/assets/therapy-planning-icon.svg"
     },
     {
       step: "STEP 3:",
       title: "Focused Processing",
       description: "We dedicate concentrated time to processing specific targets, allowing for deeper work than traditional weekly sessions permit.",
-      icon: "/assets/intensive_icon.svg"
+      icon: "/assets/emdr-intensives-icon.svg"
     },
     {
       step: "STEP 4:",
       title: "Integration & Closure",
       description: "We ensure proper closure, install positive resources, and create a plan for continued healing and integration in the days following.",
-      icon: "/assets/integration_icon.svg"
+      icon: "/assets/emdr-integration-icon.svg"
     }
   ];
 
@@ -83,7 +83,7 @@ export default function EMDRIntensives() {
       introText="EMDR Intensives provide concentrated healing work in 3-5 hour sessions, perfect for those seeking significant progress in a shorter timeframe. This format allows for deeper processing and breakthrough moments that can transform your healing journey."
       mainSectionHeading="The Power of Intensive Work"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/IMG_3358.jpeg"
+      mainSectionImage="/assets/emdr-intensives-service-page-image.jpg"
       mainSectionImageAlt="EMDR Intensive therapy session"
       mainSectionCTA="Schedule Your Intensive"
       processHeading="Your Intensive Experience"

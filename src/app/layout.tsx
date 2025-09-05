@@ -29,8 +29,24 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -39,10 +55,11 @@ export const metadata: Metadata = {
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
       {
-        url: "/assets/hero-background.jpg",
+        url: "/other-ways-therapy-social-share-image.jpg",
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy",
+        type: "image/jpeg",
       },
     ],
   },
@@ -50,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Other Ways Therapy — Transformative Therapy in Colorado for Anxiety and Trauma",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
-    images: ["/assets/hero-background.jpg"],
+    images: ["/other-ways-therapy-social-share-image.jpg"],
   },
   robots: {
     index: true,
@@ -88,7 +105,7 @@ export default function RootLayout({
               name: "Other Ways Therapy",
               url: siteUrl,
               logo:
-                "https://otherwaystherapy.com/assets/other%20ways%20(300%20x%20300%20px)-3-cropped.svg",
+                "https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg",
             }),
           }}
         />

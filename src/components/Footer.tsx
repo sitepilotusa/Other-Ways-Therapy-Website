@@ -11,7 +11,7 @@ export function Footer() {
             className="relative w-full overflow-hidden rounded-2xl md:rounded-full bg-no-repeat bg-cover bg-center bg-blend-multiply"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #BB8B74 0%, #C69177 100%), url('/assets/image.png')",
+                "linear-gradient(90deg, #BB8B74 0%, #C69177 100%), url('/assets/footer-background-texture.png')",
             }}
           >
             <div className="flex flex-row max-[800px]:flex-col items-center justify-between max-[800px]:justify-center gap-4 max-[800px]:gap-8 md:gap-8 px-10 md:px-14 py-10 md:py-14">
@@ -36,7 +36,7 @@ export function Footer() {
             {/* Left: Logo */}
             <div className="flex items-center justify-center md:col-span-3">
               <Image
-                src="/assets/other ways (300 x 300 px)-3.png"
+                src="/assets/other-ways-therapy-logo.png"
                 alt="Other Ways Therapy logo"
                 width={160}
                 height={160}

@@ -21,7 +21,7 @@ export default function EMDRConsultation() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/hero-background.jpg"
+          src="/assets/therapy-healing-landscape-background.jpg"
           alt="EMDR Consultation for Therapists"
           fill
           priority
@@ -76,7 +76,7 @@ export default function EMDRConsultation() {
         {/* Decorative background SVG */}
         <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
           <Image
-            src="/assets/Group-2 copy.svg"
+            src="/assets/decorative-leaf-pattern-left.svg"
             alt=""
             width={600}
             height={560}
@@ -119,7 +119,7 @@ export default function EMDRConsultation() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/IMG_3380.jpeg"
+                  src="/assets/emdr-consultation-service-page-image.jpg"
                   alt="EMDR consultation for therapists"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
