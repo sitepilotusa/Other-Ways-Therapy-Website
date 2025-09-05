@@ -6,9 +6,10 @@ type CognitoFormEmbedProps = {
   dataKey: string;
   formId: number | string;
   className?: string;
+  iframeTitle?: string;
 };
 
-export default function CognitoFormEmbed({ dataKey, formId, className }: CognitoFormEmbedProps) {
+export default function CognitoFormEmbed({ dataKey, formId, className, iframeTitle }: CognitoFormEmbedProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -24,14 +25,34 @@ export default function CognitoFormEmbed({ dataKey, formId, className }: Cognito
     script.setAttribute('data-key', dataKey);
     script.setAttribute('data-form', String(formId));
 
+    const ensureIframeAccessibility = (root: HTMLElement) => {
+      const iframe = root.querySelector('iframe');
+      if (iframe) {
+        const desiredTitle = iframeTitle || 'Contact form';
+        if (!iframe.getAttribute('title')) {
+          iframe.setAttribute('title', desiredTitle);
+        }
+        iframe.setAttribute('aria-label', desiredTitle);
+      }
+    };
+
+    // Observe for injected iframe and set accessible title
+    const observer = new MutationObserver(() => {
+      if (!container) return;
+      ensureIframeAccessibility(container);
+    });
+
+    observer.observe(container, { childList: true, subtree: true });
+
     container.appendChild(script);
 
     return () => {
       if (container) {
         container.innerHTML = '';
       }
+      observer.disconnect();
     };
-  }, [dataKey, formId]);
+  }, [dataKey, formId, iframeTitle]);
 
   return (
     <div ref={containerRef} className={className} />

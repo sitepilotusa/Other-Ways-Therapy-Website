@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full pt-0 md:pt-0 !text-owt-text-primary">
+    <footer id="site-footer" className="w-full pt-0 md:pt-0 !text-owt-text-primary" aria-label="Footer" tabIndex={-1}>
       {/* CTA Section */}
       <section className="w-full !bg-white py-0 my-[75px]">
         <div className="section-container">
@@ -51,7 +51,7 @@ export function Footer() {
                 {/* Quick Links */}
                 <div className="text-left w-full md:w-auto">
                   <div className="heading-font text-sm !text-owt-text-primary mb-3 whitespace-nowrap">Quick Links</div>
-                  <nav className="flex flex-col gap-2 !text-owt-text-primary text-sm md:text-base">
+                  <nav aria-label="Quick links" className="flex flex-col gap-2 !text-owt-text-primary text-sm md:text-base">
                     <Link href="/" className="hover:underline">Home</Link>
                     <Link href="/about" className="hover:underline">About Me</Link>
                     <Link href="/specialties" className="hover:underline">Specialties</Link>
@@ -64,7 +64,7 @@ export function Footer() {
                 {/* Services (same as header dropdown) */}
                 <div className="text-left w-full md:w-auto">
                   <div className="heading-font text-sm !text-owt-text-primary mb-3 whitespace-nowrap">Services</div>
-                  <nav className="flex flex-col gap-2 !text-owt-text-primary text-sm md:text-base">
+                  <nav aria-label="Footer services" className="flex flex-col gap-2 !text-owt-text-primary text-sm md:text-base">
                     <Link href="/services/emdr-therapy" className="hover:underline">EMDR Therapy</Link>
                     <Link href="/services/internal-family-systems" className="hover:underline">Internal Family Systems Therapy</Link>
                     <Link href="/services/ketamine-prep-integration" className="hover:underline">Ketamine Preparation & Integration</Link>

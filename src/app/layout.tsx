@@ -107,6 +107,12 @@ export default function RootLayout({
     <html lang="en">
       <Head />
       <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
+        {/* Skip links for keyboard users */}
+        <nav aria-label="Skip links">
+          <a href="#main-content" className="skip-link">Skip to main content</a>
+          <a href="#site-navigation" className="skip-link">Skip to navigation</a>
+          <a href="#site-footer" className="skip-link">Skip to footer</a>
+        </nav>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -158,7 +164,9 @@ export default function RootLayout({
           }}
         />
         <Header />
-        {children}
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

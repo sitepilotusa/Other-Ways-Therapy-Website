@@ -76,6 +76,34 @@ html {
   font-family: var(--font-heading);
 }
 
+/* Accessible skip link styles */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-200%);
+  background: #000;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 8px;
+  z-index: 10000;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid var(--owt-primary-brown);
+  outline-offset: 2px;
+}
+
+/* Default focus outlines for common interactive elements */
+:where(a, button, [role="button"], input, select, textarea):focus-visible {
+  outline: 3px solid var(--owt-primary-brown);
+  outline-offset: 2px;
+}
+
 .btn-base {
   border-radius: 100px;
   font-family: var(--font-sans);

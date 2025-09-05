@@ -176,7 +176,7 @@ export function Header() {
   };
 
   return (
-    <header className="relative z-20 bg-owt-bg-secondary pt-3 md:pt-4 pb-3 md:pb-4">
+    <header id="site-header" className="relative z-20 bg-owt-bg-secondary pt-3 md:pt-4 pb-3 md:pb-4">
       {/* Top bar */}
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         {/* Mobile top bar: logo left, hamburger right */}
@@ -211,7 +211,7 @@ export function Header() {
         {/* Desktop top bar with stretched navs */}
         <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center h-20 gap-x-6 lg:gap-x-10 xl:gap-x-14 2xl:gap-x-20">
           {/* Left nav (stretched) */}
-          <nav className="flex w-full items-center text-owt-text-primary font-medium justify-between pr-6 lg:pr-8 xl:pr-12 2xl:pr-16">
+          <nav id="site-navigation" aria-label="Primary" tabIndex={-1} className="flex w-full items-center text-owt-text-primary font-medium justify-between pr-6 lg:pr-8 xl:pr-12 2xl:pr-16">
             <Link href="/about" className={getLinkClasses('/about')}>
               About Me
               {isActive('/about') && (
@@ -289,7 +289,7 @@ export function Header() {
           <div aria-hidden className="w-40 md:w-44 lg:w-48 xl:w-64 2xl:w-72" />
 
           {/* Right nav (stretched) */}
-          <nav className="flex w-full items-center text-owt-text-primary font-medium justify-between pl-6 lg:pl-8 xl:pl-12 2xl:pl-16">
+          <nav aria-label="Secondary" className="flex w-full items-center text-owt-text-primary font-medium justify-between pl-6 lg:pl-8 xl:pl-12 2xl:pl-16">
             <Link href="/blog" className={getLinkClasses('/blog')}>
               Blog
               {isActive('/blog') && (
@@ -387,7 +387,7 @@ export function Header() {
 
       {/* Mobile overlay menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm overscroll-none overflow-hidden" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm overscroll-none overflow-hidden" role="dialog" aria-modal="true" aria-label="Mobile menu">
           <div className="absolute right-0 top-0 bottom-0 w-[80%] max-w-sm bg-owt-bg-secondary shadow-xl p-6 flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between">
               <span className="text-owt-text-primary font-medium">Menu</span>
