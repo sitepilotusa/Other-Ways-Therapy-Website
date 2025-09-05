@@ -3,6 +3,7 @@ import { Kalnia, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import Head from "./head";
 
 const headingFont = Kalnia({
   variable: "--font-heading",
@@ -16,10 +17,10 @@ const bodyFont = Bricolage_Grotesque({
   display: "swap",
 });
 
-// Simple approach - let the browser resolve the domain
-const siteUrl = process.env.NODE_ENV === 'development' 
+// Configure URLs for different environments
+const siteUrl = process.env.NODE_ENV === 'development'
   ? 'http://localhost:3000'
-  : "https://otherwaystherapy.com"; // Default to production, relative URLs will work for staging
+  : process.env.NEXT_PUBLIC_SITE_URL || "https://otherwaysco.sitepilotpreflight.com"; // Test URL, can be overridden with env var
 
 const verification: Metadata["verification"] =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
       {
-        url: "/other-ways-therapy-social-share-image.jpg", // Simple relative URL
+        url: `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy",
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
-    images: ["/other-ways-therapy-social-share-image.jpg"], // Simple relative URL
+    images: [`${siteUrl}/other-ways-therapy-social-share-image.jpg`],
   },
   robots: {
     index: true,
@@ -104,6 +105,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head />
       <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
         <script
           type="application/ld+json"
@@ -114,7 +116,7 @@ export default function RootLayout({
               name: "Other Ways Therapy",
               url: siteUrl,
               logo:
-                "https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg",
+                `${siteUrl}/assets/other-ways-therapy-logo.svg`,
             }),
           }}
         />
@@ -127,7 +129,7 @@ export default function RootLayout({
               name: "Other Ways Therapy",
               url: siteUrl,
               image:
-                "https://otherwaystherapy.com/assets/other-ways-therapy-logo.png",
+                `${siteUrl}/assets/other-ways-therapy-logo.png`,
               telephone: "+1-720-863-6373",
               address: {
                 "@type": "PostalAddress",
