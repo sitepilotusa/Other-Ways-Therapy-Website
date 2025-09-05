@@ -16,14 +16,10 @@ const bodyFont = Bricolage_Grotesque({
   display: "swap",
 });
 
-// Prioritize the custom staging domain for the test site
+// Simple approach - let the browser resolve the domain
 const siteUrl = process.env.NODE_ENV === 'development' 
   ? 'http://localhost:3000'
-  : process.env.VERCEL_URL?.includes('sitepilotpreflight')
-  ? "https://otherwaysco.sitepilotpreflight.com"
-  : process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "https://otherwaystherapy.com";
+  : "https://otherwaystherapy.com"; // Default to production, relative URLs will work for staging
 
 const verification: Metadata["verification"] =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
@@ -67,7 +63,7 @@ export const metadata: Metadata = {
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
       {
-        url: `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
+        url: "/other-ways-therapy-social-share-image.jpg", // Simple relative URL
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy",
@@ -79,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
-    images: [`${siteUrl}/other-ways-therapy-social-share-image.jpg`],
+    images: ["/other-ways-therapy-social-share-image.jpg"], // Simple relative URL
   },
   robots: {
     index: true,
