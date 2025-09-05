@@ -43,14 +43,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       url: `/areas-we-serve/${slug}`,
       title: `Therapy in ${town} | Other Ways Therapy`,
       description: `Compassionate, effective therapy intensives for individuals and families in ${town}. In-person in Wheat Ridge and virtual statewide.`,
-      images: [
-        {
-          url: '/assets/therapy-healing-landscape-background.jpg',
-          width: 1200,
-          height: 630,
-          alt: `Therapy in ${town} - Other Ways Therapy`,
-        },
-      ],
     },
   };
 }

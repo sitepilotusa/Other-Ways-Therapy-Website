@@ -33,11 +33,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const areaRoutes = towns.map((slug) => `/areas-we-serve/${slug}`);
 
   return [
-    ...routes,
-    ...serviceRoutes,
-    ...blogRoutes,
-    ...areaRoutes,
-  ].map((path) => ({ url: `${base}${path}`, lastModified: now }));
+    ...routes.map((path) => ({
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    })),
+    ...serviceRoutes.map((path) => ({
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    ...blogRoutes.map((path) => ({
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: 'yearly' as const,
+      priority: 0.6,
+    })),
+    ...areaRoutes.map((path) => ({
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ];
 }
 
 

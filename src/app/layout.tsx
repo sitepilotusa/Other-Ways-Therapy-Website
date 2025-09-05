@@ -16,10 +16,13 @@ const bodyFont = Bricolage_Grotesque({
   display: "swap",
 });
 
-const siteUrl = process.env.VERCEL_URL 
-  ? `https://${process.env.VERCEL_URL}`
-  : process.env.NODE_ENV === 'development' 
+// Prioritize the custom staging domain for the test site
+const siteUrl = process.env.NODE_ENV === 'development' 
   ? 'http://localhost:3000'
+  : process.env.VERCEL_URL?.includes('sitepilotpreflight')
+  ? "https://otherwaysco.sitepilotpreflight.com"
+  : process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
   : "https://otherwaystherapy.com";
 
 const verification: Metadata["verification"] =
