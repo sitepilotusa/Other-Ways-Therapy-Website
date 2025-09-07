@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function EMDRConsultation() {
   return (
-    <main className="flex flex-col bg-owt-bg-primary">
+    <main className="flex flex-col !bg-white">
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image

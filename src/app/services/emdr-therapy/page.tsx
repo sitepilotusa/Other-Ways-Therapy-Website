@@ -44,7 +44,7 @@ export default function EMDRTherapy() {
   ];
 
   return (
-    <main className="flex flex-col bg-owt-bg-primary">
+    <main className="flex flex-col !bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

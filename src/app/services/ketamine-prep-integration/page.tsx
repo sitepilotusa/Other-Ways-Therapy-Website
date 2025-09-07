@@ -17,24 +17,12 @@ export default function KetamineIntegration() {
   const steps = [
     {
       step: "STEP 1:",
-      title: "Preparation & Intention Setting",
-      description: "We prepare your mind and body for the experience, setting clear intentions and establishing safety protocols for your journey.",
-      icon: "/assets/therapy-planning-icon.svg"
-    },
-    {
-      step: "STEP 2:",
       title: "Integration Processing",
       description: "We work together to understand and integrate the insights, emotions, and experiences that emerged during your ketamine session.",
       icon: "/assets/emdr-integration-icon.svg"
     },
     {
-      step: "STEP 3:",
-      title: "IFS Parts Exploration",
-      description: "Using Internal Family Systems, we explore the parts of you that surfaced during the experience and cultivate Self‑leadership and compassion.",
-      icon: "/assets/internal-family-systems-somatics-icon.svg"
-    },
-    {
-      step: "STEP 4:",
+      step: "STEP 2:",
       title: "Ongoing Support",
       description: "Continued support helps you translate insights into lasting change, incorporating new perspectives into your daily life and relationships.",
       icon: "/assets/emdr-consultation-icon.svg"

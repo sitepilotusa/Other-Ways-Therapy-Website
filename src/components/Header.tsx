@@ -360,10 +360,10 @@ export function Header() {
               )}
             </div>
             <Link
-              href="tel:+17208636373"
+              href="/contact"
               className="btn-base btn-dark px-6 py-2 text-sm md:text-base active:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-owt-primary-brown"
             >
-              Call Now
+              Schedule
             </Link>
           </nav>
         </div>
@@ -455,11 +455,11 @@ export function Header() {
                 </div>
               </details>
               <Link
-                href="tel:+17208636373"
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="btn-base btn-dark mt-2 inline-flex w-max items-center justify-center px-6 py-2 text-sm md:text-base"
               >
-                Call Now
+                Schedule Now
               </Link>
             </div>
           </div>
