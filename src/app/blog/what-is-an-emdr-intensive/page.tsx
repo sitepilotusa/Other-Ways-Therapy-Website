@@ -41,7 +41,7 @@ const jsonLd = {
   },
   datePublished: '2025-08-19',
   dateModified: '2025-08-19',
-  image: 'https://otherwaystherapy.com/assets/emdr-intensive-therapy-blog-image.jpg',
+  image: 'https://otherwaystherapy.com/assets/emdr-intensive-therapy-blog-image.avif',
   description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
 };
 
@@ -56,7 +56,7 @@ export default function BlogPost() {
         {/* Hero Section */}
         <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
           <Image
-            src="/assets/therapy-healing-landscape-background.jpg"
+            src="/assets/therapy-healing-landscape-background.avif"
             alt="Other Ways Therapy Blog"
             fill
             priority
@@ -87,7 +87,7 @@ export default function BlogPost() {
                 <div className="flex items-center gap-3">
                   <div className="relative rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
                     <Image
-                      src="/assets/molly-pike-therapist-portrait.jpg"
+                      src="/assets/molly-pike-therapist-portrait.avif"
                       alt="Molly Pike"
                       fill
                       sizes="40px"
@@ -102,7 +102,7 @@ export default function BlogPost() {
               <div className="mb-8 md:mb-12 flex justify-center">
                 <div className="relative w-full max-w-md md:max-w-lg h-[300px] md:h-[400px] lg:h-[500px] rounded-[20px] overflow-hidden">
                   <Image
-                    src="/assets/emdr-intensive-therapy-blog-image.jpg"
+                    src="/assets/emdr-intensive-therapy-blog-image.avif"
                     alt="EMDR Intensive therapy session"
                     fill
                     sizes="(min-width: 1024px) 896px, (min-width: 768px) 768px, 100vw"
@@ -283,7 +283,7 @@ export default function BlogPost() {
                   <div className="flex-shrink-0 mx-auto md:mx-0">
                     <div className="relative rounded-full overflow-hidden w-24 h-24 md:w-32 md:h-32">
                       <Image
-                        src="/assets/molly-pike-therapist-portrait.jpg"
+                        src="/assets/molly-pike-therapist-portrait.avif"
                         alt="Molly Pike, Licensed Professional Counselor"
                         fill
                         sizes="(min-width: 768px) 128px, 96px"

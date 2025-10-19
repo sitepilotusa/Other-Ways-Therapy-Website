@@ -122,7 +122,7 @@
 ### Hero Section Pattern
 ```html
 <section class="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[100px]">
-  <Image src="/assets/therapy-healing-landscape-background.jpg" alt="" fill priority className="object-cover" />
+  <Image src="/assets/therapy-healing-landscape-background.avif" alt="" fill priority className="object-cover" />
   <div class="absolute inset-0">
     <div class="section-container h-full">
       <div class="h-full flex items-center justify-center">
@@ -161,7 +161,7 @@
       <!-- Right column: Image -->
       <div class="flex justify-center lg:justify-end">
         <div class="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem]">
-          <Image src="/assets/footer-background-texture.png" alt="" fill className="object-cover" />
+          <Image src="/assets/footer-background-texture.avif" alt="" fill className="object-cover" />
         </div>
       </div>
     </div>

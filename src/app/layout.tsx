@@ -48,10 +48,12 @@ export const metadata: Metadata = {
       {
         rel: "android-chrome",
         url: "/android-chrome-192x192.png",
+        type: "image/png",
       },
       {
         rel: "android-chrome",
         url: "/android-chrome-512x512.png",
+        type: "image/png",
       },
     ],
   },
@@ -63,6 +65,13 @@ export const metadata: Metadata = {
     title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
     images: [
+      {
+        url: `${siteUrl}/other-ways-therapy-social-share-image.avif`,
+        width: 1200,
+        height: 630,
+        alt: "Other Ways Therapy",
+        type: "image/avif",
+      },
       {
         url: `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
         width: 1200,
@@ -76,7 +85,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Other Ways Therapy | EMDR & IFS in Colorado",
     description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
-    images: [`${siteUrl}/other-ways-therapy-social-share-image.jpg`],
+    images: [
+      `${siteUrl}/other-ways-therapy-social-share-image.avif`,
+      `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
+    ],
   },
   robots: {
     index: true,
@@ -135,7 +147,7 @@ export default function RootLayout({
               name: "Other Ways Therapy",
               url: siteUrl,
               image:
-                `${siteUrl}/assets/other-ways-therapy-logo.png`,
+                `${siteUrl}/assets/other-ways-therapy-logo.avif`,
               telephone: "+1-720-863-6373",
               address: {
                 "@type": "PostalAddress",

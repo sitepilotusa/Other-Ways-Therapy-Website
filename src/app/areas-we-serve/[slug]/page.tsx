@@ -138,7 +138,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
       {/* Hero Section (styled like Home) */}
       <section className="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/therapy-healing-landscape-background.jpg"
+          src="/assets/therapy-healing-landscape-background.avif"
           alt={`Therapy in ${town} - Other Ways Therapy`}
           fill
           priority

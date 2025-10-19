@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LazyMap } from "@/components/LazyMap";
 
 export function Footer() {
   return (
@@ -11,7 +12,7 @@ export function Footer() {
             className="relative w-full overflow-hidden rounded-2xl md:rounded-full bg-no-repeat bg-cover bg-center bg-blend-multiply"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #BB8B74 0%, #C69177 100%), url('/assets/footer-background-texture.png')",
+                "linear-gradient(90deg, #BB8B74 0%, #C69177 100%), image-set(url('/assets/footer-background-texture.avif') type('image/avif') 1x, url('/assets/footer-background-texture.png') type('image/png') 1x)",
             }}
           >
             <div className="flex flex-row max-[800px]:flex-col items-center justify-between max-[800px]:justify-center gap-4 max-[800px]:gap-8 md:gap-8 px-10 md:px-14 py-10 md:py-14">
@@ -36,7 +37,7 @@ export function Footer() {
             {/* Left: Logo */}
             <div className="flex items-center justify-center md:col-span-3">
               <Image
-                src="/assets/other-ways-therapy-logo.png"
+                src="/assets/other-ways-therapy-logo.avif"
                 alt="Other Ways Therapy logo"
                 width={160}
                 height={160}
@@ -88,12 +89,10 @@ export function Footer() {
                       <span className="font-medium">Phone:</span> <Link href="tel:+17208636373" className="hover:underline">720-863-6373</Link>
                     </div>
                     <div className="mt-3 w-full max-w-[280px] sm:max-w-[200px]">
-                      <iframe
+                      <LazyMap
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.5!2d-105.1234567!3d39.7392358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f16.5!3m3!1m2!1s0x876b8d4e278dafd3%3A0x123456789!2s4251%20Kipling%20St%20%23430%2C%20Wheat%20Ridge%2C%20CO%2080033!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus"
                         width="100%"
                         height="150"
-                        allowFullScreen={false}
-                        loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         className="rounded-xl border border-gray-400 w-full"
                         title="Other Ways Therapy Location"
@@ -123,5 +122,3 @@ export function Footer() {
     </footer>
   );
 }
-
-

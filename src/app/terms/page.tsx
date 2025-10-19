@@ -13,7 +13,7 @@ export default function TermsOfServicePage() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/therapy-healing-landscape-background.jpg"
+          src="/assets/therapy-healing-landscape-background.avif"
           alt="Terms of Service"
           fill
           priority

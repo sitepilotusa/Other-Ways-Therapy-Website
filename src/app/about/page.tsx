@@ -21,7 +21,7 @@ export default function About() {
       {/* Hero Section - About Me */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/therapy-healing-landscape-background.jpg"
+          src="/assets/therapy-healing-landscape-background.avif"
           alt="About Other Ways Therapy"
           fill
           priority
@@ -64,7 +64,7 @@ export default function About() {
             <div className="flex justify-center lg:justify-center mt-4 md:mt-12 lg:mt-0 order-1 lg:order-1">
               <div className="relative rounded-full overflow-hidden w-[26rem] h-[26rem] md:w-[24rem] md:h-[24rem] lg:w-[26rem] lg:h-[26rem] !bg-white/50">
                 <Image
-                  src="/assets/molly-pike-therapist-portrait.jpg"
+                  src="/assets/molly-pike-therapist-portrait.avif"
                   alt="Molly Pike, Licensed Professional Counselor"
                   fill
                   sizes="(min-width: 1280px) 26rem, (min-width: 1024px) 24rem, 26rem"
@@ -170,7 +170,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/lgbtq-inclusive-badge.jpg" 
+                  src="/assets/lgbtq-inclusive-badge.avif" 
                   alt="Licensed Professional Counselor badge" 
                   width={80} 
                   height={80}
@@ -196,7 +196,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/emdr-approved-consultant-badge.jpg" 
+                  src="/assets/emdr-approved-consultant-badge.avif" 
                   alt="EMDRIA Approved Consultant badge" 
                   width={80} 
                   height={80}
@@ -217,7 +217,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/tripp-certified-badge.jpg" 
+                  src="/assets/tripp-certified-badge.avif" 
                   alt="Ketamine Assisted Psychotherapy Certified badge" 
                   width={80} 
                   height={80}
@@ -238,7 +238,7 @@ export default function About() {
             <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 flex gap-4 md:gap-6">
               <div className="flex-shrink-0">
                 <Image 
-                  src="/assets/emdr-certified-therapist-badge.jpg" 
+                  src="/assets/emdr-certified-therapist-badge.avif" 
                   alt="EMDR Certified badge" 
                   width={80} 
                   height={80}

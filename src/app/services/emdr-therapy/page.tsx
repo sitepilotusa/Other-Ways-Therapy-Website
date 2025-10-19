@@ -67,7 +67,7 @@ export default function EMDRTherapy() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/therapy-healing-landscape-background.jpg"
+          src="/assets/therapy-healing-landscape-background.avif"
           alt="EMDR Therapy at Other Ways Therapy"
           fill
           priority
@@ -143,7 +143,7 @@ export default function EMDRTherapy() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/emdr-therapy-session-image.jpg"
+                  src="/assets/emdr-therapy-session-image.avif"
                   alt="Nature scene"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"

@@ -73,7 +73,7 @@ export default function KetamineIntegration() {
       introText="Comprehensive preparation and integration support to help you make meaning from your ketamine experience—even if it occurred with another provider."
       mainSectionHeading="The KAP Process"
       mainSectionContent={mainSectionContent}
-      mainSectionImage="/assets/ketamine-preparation-integration-service-image.jpg"
+      mainSectionImage="/assets/ketamine-preparation-integration-service-image.avif"
       mainSectionImageAlt="Ketamine therapy preparation and integration"
       mainSectionCTA="Learn About KAP"
       processHeading="Your KAP Journey"

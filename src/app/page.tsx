@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/other-ways-therapy-social-share-image.jpg", // Simple relative URL
+        url: "/other-ways-therapy-social-share-image.avif", // Simple relative URL
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy",
@@ -35,7 +35,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
-          src="/assets/therapy-healing-landscape-background.jpg"
+          src="/assets/therapy-healing-landscape-background.avif"
           alt="Therapeutic landscape background for Other Ways Therapy"
           fill
           priority
@@ -130,7 +130,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/molly-pike-portrait.jpg"
+                  src="/assets/molly-pike-portrait.avif"
                   alt="Molly Pike, founder of Other Ways Therapy"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
@@ -208,7 +208,10 @@ export default function Home() {
       {/* EMDR Intensives Section */}
       <section
         className="relative w-full !bg-white section-padding overflow-hidden bg-no-repeat bg-right bg-cover"
-        style={{ backgroundImage: "url('/assets/emdr-intensives-background.png')" }}
+        style={{
+          backgroundImage:
+            "image-set(url('/assets/emdr-intensives-background.avif') type('image/avif') 1x, url('/assets/emdr-intensives-background.png') type('image/png') 1x)",
+        }}
       >
         <div className="relative z-10 section-container">
           <div className="section-grid-2col">
@@ -216,7 +219,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-start mt-8 md:mt-12 lg:mt-0 order-2 lg:order-1">
               <div className="relative rounded-full overflow-hidden w-[22rem] h-[22rem] md:w-[32rem] md:h-[32rem] lg:w-[30rem] lg:h-[30rem] !bg-white/50">
                 <Image
-                  src="/assets/emdr-intensives-image.jpg"
+                  src="/assets/emdr-intensives-image.avif"
                   alt="EMDR Intensives"
                   fill
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
