@@ -98,7 +98,7 @@ export default function EMDRConsultation() {
             </h2>
             <div className="space-y-6 text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
               <p>
-                Consultation is more than just checking the boxes for certification—it's a space for you to deepen your clinical intuition, stay true to the EMDR model, and explore the flexibility it offers in real‑world practice. We'll also look at how EMDR can thoughtfully integrate with transformative approaches like Internal Family Systems (IFS) and Ketamine‑Assisted Therapy and Integration, in ways that align with your clinical style and your clients' needs.
+                Consultation is more than just checking the boxes for certification—it's a space for you to deepen your clinical intuition, stay true to the EMDR model, and explore the flexibility it offers in real‑world practice. We'll also look at how EMDR can thoughtfully integrate with transformative approaches like <Link href="/services/internal-family-systems" className="hover:underline">Internal Family Systems (IFS)</Link> and <Link href="/services/ketamine-prep-integration" className="hover:underline">ketamine preparation and integration support</Link>, in ways that align with your clinical style and your clients' needs.
               </p>
               <p>
                 My goal is to support your growth in competence, confidence, and curiosity—so your work feels grounded, responsive, and truly impactful.
@@ -274,9 +274,9 @@ export default function EMDRConsultation() {
                 <div className="mb-6">
                   <h4 className="heading-font text-lg text-owt-supporting mb-4">Explore with me:</h4>
                   <div className="space-y-3 text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-                    <p>• Implementing EMDR Intensives in your practice</p>
-                    <p>• Integrating Internal Family Systems (IFS) with EMDR for parts work</p>
-                    <p>• Using EMDR alongside psychedelic‑assisted therapy (e.g., Ketamine)</p>
+                    <p>• Implementing <Link href="/services/emdr-intensives" className="hover:underline">EMDR intensives</Link> in your practice</p>
+                    <p>• Integrating <Link href="/services/internal-family-systems" className="hover:underline">Internal Family Systems (IFS)</Link> with EMDR for parts work</p>
+                    <p>• Using EMDR alongside <Link href="/services/ketamine-prep-integration" className="hover:underline">ketamine preparation and integration</Link></p>
                     <p>• Ethical, clinical, and logistical guidance for blending modalities</p>
                   </div>
                 </div>

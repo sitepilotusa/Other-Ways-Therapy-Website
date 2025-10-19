@@ -1,4 +1,5 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
+import Link from "next/link";
 import { Metadata } from "next";
 import { canonicalBase } from "@/lib/site";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
@@ -66,7 +67,10 @@ export default function KetamineIntegration() {
         While I trained in Ketamine‑Assisted Psychotherapy (KAP), I do not currently provide the ketamine treatment itself. I offer dedicated preparation and integration sessions designed to maximize the therapeutic benefits of your journey.
       </p>
       <p>
-        EMDR can be particularly powerful for processing trauma‑related content that may have surfaced, and using IFS we’ll explore the parts of you that may have emerged—helping you develop a compassionate relationship with all aspects of yourself.
+        <Link href="/services/emdr-therapy" className="hover:underline">EMDR therapy</Link> can be particularly powerful for processing trauma‑related content that may have surfaced, and with <Link href="/services/internal-family-systems" className="hover:underline">Internal Family Systems therapy</Link> we’ll explore the parts of you that emerged—helping you develop a compassionate relationship with all aspects of yourself.
+      </p>
+      <p>
+        If you’re craving deeper momentum after integration sessions, <Link href="/services/emdr-intensives" className="hover:underline">EMDR intensives</Link> provide focused time to continue the healing that ketamine opened up.
       </p>
     </>
   );

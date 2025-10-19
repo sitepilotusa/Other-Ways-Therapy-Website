@@ -245,6 +245,32 @@ export default function EMDRTherapy() {
           </div>
         </div>
       </section>
+
+      {/* Related Services Section */}
+      <section className="w-full bg-owt-bg-primary section-padding">
+        <div className="section-container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="heading-font text-clamp-section-title text-owt-supporting mb-6 md:mb-8">
+              Explore Complementary Support
+            </h2>
+            <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed mb-5">
+              If you’re drawn to parts work alongside EMDR, <Link href="/services/internal-family-systems" className="hover:underline">
+                Internal Family Systems therapy
+              </Link> can help your system integrate the shifts we uncover together.
+            </p>
+            <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed mb-5">
+              When you want concentrated time to address a specific theme, <Link href="/services/emdr-intensives" className="hover:underline">
+                EMDR intensives
+              </Link> offer extended space to move further without the pause of weekly sessions.
+            </p>
+            <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
+              For clients weaving psychedelic work into their healing, <Link href="/services/ketamine-prep-integration" className="hover:underline">
+                ketamine preparation and integration support
+              </Link> keeps the insights grounded between sessions.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

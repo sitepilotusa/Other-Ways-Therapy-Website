@@ -51,8 +51,65 @@ export default function Services() {
     }
   ];
 
+  const serviceAddress = {
+    '@type': 'PostalAddress',
+    streetAddress: '4251 Kipling St. #430',
+    addressLocality: 'Wheat Ridge',
+    addressRegion: 'CO',
+    postalCode: '80033',
+    addressCountry: 'US',
+  } as const;
+
+  const provider = {
+    '@type': 'Organization',
+    name: 'Other Ways Therapy',
+    url: canonicalBase,
+    telephone: '+1-720-863-6373',
+    logo: `${canonicalBase}/assets/other-ways-therapy-logo.avif`,
+    address: serviceAddress,
+  } as const;
+
+  const servicesLd = {
+    '@context': 'https://schema.org',
+    '@graph': services.map((service) => ({
+      '@type': 'Service',
+      '@id': `${canonicalBase}${service.href}#service`,
+      name: service.title,
+      serviceType: service.title,
+      description: service.description,
+      url: `${canonicalBase}${service.href}`,
+      provider,
+      areaServed: [
+        { '@type': 'City', name: 'Golden' },
+        { '@type': 'AdministrativeArea', name: 'Jefferson County' },
+        { '@type': 'State', name: 'Colorado' },
+      ],
+      serviceAudience: {
+        '@type': 'Audience',
+        audienceType: 'Adults seeking trauma therapy and nervous system-safe care',
+      },
+      serviceLocation: {
+        '@type': 'Place',
+        name: 'Other Ways Therapy Office',
+        address: serviceAddress,
+      },
+      offers: {
+        '@type': 'Offer',
+        availability: 'https://schema.org/InStock',
+        priceCurrency: 'USD',
+        url: `${canonicalBase}${service.href}`,
+      },
+    })),
+  } as const;
+
   return (
     <main className="flex flex-col bg-owt-bg-primary">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(servicesLd),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image

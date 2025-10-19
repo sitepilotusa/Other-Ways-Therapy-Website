@@ -1,4 +1,5 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
+import Link from "next/link";
 import { Metadata } from "next";
 import { canonicalBase } from "@/lib/site";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
@@ -77,6 +78,9 @@ export default function EMDRIntensives() {
       </p>
       <p>
         This format requires careful preparation and adequate support systems. We ensure you're ready for intensive work and have the resources needed for integration and continued healing after our session together.
+      </p>
+      <p>
+        Many clients pair their intensive with ongoing <Link href="/services/emdr-therapy" className="hover:underline">weekly EMDR therapy</Link> to sustain gains, or step into an intensive after <Link href="/services/ketamine-prep-integration" className="hover:underline">ketamine preparation and integration support</Link> when they want to keep momentum moving forward.
       </p>
     </>
   );

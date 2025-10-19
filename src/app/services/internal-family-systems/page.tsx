@@ -1,4 +1,5 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
+import Link from "next/link";
 import { Metadata } from "next";
 import { canonicalBase } from "@/lib/site";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
@@ -77,6 +78,9 @@ export default function InternalFamilySystems() {
       </p>
       <p>
         This approach is particularly powerful for those who feel internal conflict, struggle with self-criticism, or notice different "versions" of themselves showing up in different situations. IFS creates space for all parts of you to be seen, understood, and integrated.
+      </p>
+      <p>
+        Many clients weave this work alongside <Link href="/services/emdr-therapy" className="hover:underline">EMDR therapy</Link> to gently process stuck memories, or partner it with <Link href="/services/ketamine-prep-integration" className="hover:underline">ketamine preparation and integration support</Link> when psychedelic insights surface parts that need a little extra care.
       </p>
     </>
   );
