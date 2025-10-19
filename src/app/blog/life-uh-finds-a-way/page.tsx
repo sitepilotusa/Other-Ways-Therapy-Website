@@ -11,12 +11,12 @@ const shareImage = `${canonicalBase}/assets/molly-pike-licensed-counselor-portra
 const logoUrl = `${canonicalBase}/assets/other-ways-therapy-logo.svg`;
 
 export const metadata: Metadata = {
-  title: 'Understanding Your Symptoms & Behaviors Through An EMDR Lens | Other Ways Therapy Blog',
-  description: 'Understanding how your brain adapted to protect you and how EMDR therapy can help transform these patterns. By Molly Pike, Licensed Professional Counselor.',
+  title: 'EMDR Insights from Golden, CO | Other Ways Therapy',
+  description: 'See how EMDR reframes protective adaptations for Golden, CO clients navigating anxiety, shutdown, and overwhelm.',
   authors: [{ name: 'Molly Pike' }],
   openGraph: {
-    title: 'Understanding Your Symptoms & Behaviors Through An EMDR Lens',
-    description: 'Understanding how your brain adapted to protect you and how EMDR therapy can help transform these patterns.',
+    title: 'EMDR Insights from Golden, CO | Other Ways Therapy',
+    description: 'See how EMDR reframes protective adaptations for Golden, CO clients navigating anxiety, shutdown, and overwhelm.',
     type: 'article',
     authors: ['Molly Pike'],
     url: canonicalUrl,
@@ -49,7 +49,7 @@ const jsonLd = {
   dateModified: '2025-01-27',
   image: shareImage,
   mainEntityOfPage: canonicalUrl,
-  description: 'Understanding how your brain adapted to protect you and how EMDR therapy can help transform these patterns.',
+  description: 'See how EMDR reframes protective adaptations for Golden, CO clients navigating anxiety, shutdown, and overwhelm.',
 };
 
 export default function BlogPost() {

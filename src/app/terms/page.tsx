@@ -5,11 +5,13 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/terms';
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Other Ways Therapy",
-  description: "Terms of service for Other Ways Therapy.",
+  title: "Terms of Service for Golden, CO | Other Ways Therapy",
+  description: "Understand the service terms governing therapy and consultation provided from Golden, CO by Other Ways Therapy.",
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     url: `${canonicalBase}${canonicalPath}`,
+    title: "Terms of Service for Golden, CO | Other Ways Therapy",
+    description: "Understand the service terms governing therapy and consultation provided from Golden, CO by Other Ways Therapy.",
   },
 };
 
@@ -106,4 +108,3 @@ export default function TermsOfServicePage() {
     </main>
   );
 }
-

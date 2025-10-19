@@ -6,14 +6,14 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/areas-we-serve';
 
 export const metadata: Metadata = {
-  title: "Areas We Serve | Other Ways Therapy",
+  title: "Areas We Serve from Golden, CO | Other Ways Therapy",
   description:
-    "Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.",
+    "Discover Colorado communities we support from Golden, CO with EMDR intensives, IFS therapy, and virtual trauma care.",
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'Areas We Serve | Other Ways Therapy',
-    description: 'Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.',
+    title: 'Areas We Serve from Golden, CO | Other Ways Therapy',
+    description: 'Discover Colorado communities we support from Golden, CO with EMDR intensives, IFS therapy, and virtual trauma care.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

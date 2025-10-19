@@ -7,13 +7,13 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 const canonicalPath = '/services/emdr-intensives';
 
 export const metadata: Metadata = {
-  title: 'EMDR Intensives | Other Ways Therapy',
-  description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
+  title: 'EMDR Intensives in Golden, CO | Other Ways Therapy',
+  description: 'Accelerated EMDR intensives deliver focused, single-day trauma healing for motivated clients based in Golden, CO.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'EMDR Intensives | Other Ways Therapy',
-    description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
+    title: 'EMDR Intensives in Golden, CO | Other Ways Therapy',
+    description: 'Accelerated EMDR intensives deliver focused, single-day trauma healing for motivated clients based in Golden, CO.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

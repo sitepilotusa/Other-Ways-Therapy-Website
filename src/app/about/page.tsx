@@ -6,14 +6,14 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/about';
 
 export const metadata: Metadata = {
-  title: "About | Other Ways Therapy",
+  title: "About Molly Pike in Golden, CO | Other Ways Therapy",
   description:
-    "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
+    "Meet Molly Pike, LPC, delivering trauma-informed EMDR, IFS, and intensives for clients in Golden, CO and across Colorado.",
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
-    title: "About | Other Ways Therapy",
+    title: "About Molly Pike in Golden, CO | Other Ways Therapy",
     description:
-      "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
+      "Meet Molly Pike, LPC, delivering trauma-informed EMDR, IFS, and intensives for clients in Golden, CO and across Colorado.",
     type: "website",
     url: `${canonicalBase}${canonicalPath}`,
   },

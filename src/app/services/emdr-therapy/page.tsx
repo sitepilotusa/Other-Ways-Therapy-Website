@@ -8,13 +8,13 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 const canonicalPath = '/services/emdr-therapy';
 
 export const metadata: Metadata = {
-  title: 'EMDR Therapy | Other Ways Therapy',
-  description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
+  title: 'EMDR Therapy in Golden, CO | Other Ways Therapy',
+  description: 'Process stuck memories with gentle EMDR care designed for Golden, CO clients seeking nervous system-safe trauma healing.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'EMDR Therapy | Other Ways Therapy',
-    description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
+    title: 'EMDR Therapy in Golden, CO | Other Ways Therapy',
+    description: 'Process stuck memories with gentle EMDR care designed for Golden, CO clients seeking nervous system-safe trauma healing.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

@@ -7,13 +7,13 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/contact';
 
 export const metadata: Metadata = {
-  title: 'Contact | Other Ways Therapy',
-  description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
+  title: 'Contact Us in Golden, CO | Other Ways Therapy',
+  description: 'Schedule a free consult or message Molly Pike for EMDR, IFS, and ketamine integration support in Golden, CO.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'Contact | Other Ways Therapy',
-    description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
+    title: 'Contact Us in Golden, CO | Other Ways Therapy',
+    description: 'Schedule a free consult or message Molly Pike for EMDR, IFS, and ketamine integration support in Golden, CO.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

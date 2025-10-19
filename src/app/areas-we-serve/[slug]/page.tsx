@@ -33,16 +33,16 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const town = fromSlug(slug);
   return {
-    title: `Therapy in ${town} | Other Ways Therapy`,
-    description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
+    title: `Therapy Near ${town} from Golden, CO | Other Ways Therapy`,
+    description: `Compassionate care rooted in Golden, CO supports ${town} residents with EMDR intensives, IFS therapy, and virtual trauma services.`,
     alternates: {
       canonical: `${canonicalBase}/areas-we-serve/${slug}`,
     },
     openGraph: {
       type: 'website',
       url: `${canonicalBase}/areas-we-serve/${slug}`,
-      title: `Therapy in ${town} | Other Ways Therapy`,
-      description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
+      title: `Therapy Near ${town} from Golden, CO | Other Ways Therapy`,
+      description: `Compassionate care rooted in Golden, CO supports ${town} residents with EMDR intensives, IFS therapy, and virtual trauma services.`,
     },
   };
 }

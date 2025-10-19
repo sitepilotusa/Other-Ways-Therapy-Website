@@ -7,13 +7,13 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 const canonicalPath = '/services/internal-family-systems';
 
 export const metadata: Metadata = {
-  title: 'Internal Family Systems Therapy | Other Ways Therapy',
-  description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
+  title: 'IFS Therapy in Golden, CO | Other Ways Therapy',
+  description: 'Heal protective parts and grow Self-leadership with IFS therapy crafted for Golden, CO clients navigating complex trauma.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'Internal Family Systems Therapy | Other Ways Therapy',
-    description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
+    title: 'IFS Therapy in Golden, CO | Other Ways Therapy',
+    description: 'Heal protective parts and grow Self-leadership with IFS therapy crafted for Golden, CO clients navigating complex trauma.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

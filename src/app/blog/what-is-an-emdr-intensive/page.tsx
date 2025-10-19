@@ -11,12 +11,12 @@ const shareImage = `${canonicalBase}/assets/emdr-intensive-therapy-blog-image.av
 const logoUrl = `${canonicalBase}/assets/other-ways-therapy-logo.svg`;
 
 export const metadata: Metadata = {
-  title: 'What Is An EMDR Intensive? | Other Ways Therapy Blog',
-  description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours. By Molly Pike, Licensed Professional Counselor.',
+  title: 'EMDR Intensives Explained in Golden, CO | Other Ways Therapy',
+  description: 'Discover how EMDR intensives support Golden, CO clients with condensed trauma therapy and guided integration.',
   authors: [{ name: 'Molly Pike' }],
   openGraph: {
-    title: 'What Is An EMDR Intensive?',
-    description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
+    title: 'EMDR Intensives Explained in Golden, CO | Other Ways Therapy',
+    description: 'Discover how EMDR intensives support Golden, CO clients with condensed trauma therapy and guided integration.',
     type: 'article',
     authors: ['Molly Pike'],
     url: canonicalUrl,
@@ -49,7 +49,7 @@ const jsonLd = {
   dateModified: '2025-08-19',
   image: shareImage,
   mainEntityOfPage: canonicalUrl,
-  description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
+  description: 'Discover how EMDR intensives support Golden, CO clients with condensed trauma therapy and guided integration.',
 };
 
 export default function BlogPost() {

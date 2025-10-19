@@ -8,13 +8,13 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 const canonicalPath = '/services/emdr-consultation';
 
 export const metadata: Metadata = {
-  title: 'EMDR Consultation for Therapists | Other Ways Therapy',
-  description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
+  title: 'EMDR Consultation in Golden, CO | Other Ways Therapy',
+  description: 'Certified EMDR consultation supports Colorado clinicians from Golden, CO with case guidance, certification prep, and confidence.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'EMDR Consultation for Therapists | Other Ways Therapy',
-    description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
+    title: 'EMDR Consultation in Golden, CO | Other Ways Therapy',
+    description: 'Certified EMDR consultation supports Colorado clinicians from Golden, CO with case guidance, certification prep, and confidence.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

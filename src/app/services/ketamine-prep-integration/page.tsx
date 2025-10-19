@@ -6,13 +6,13 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 const canonicalPath = '/services/ketamine-prep-integration';
 
 export const metadata: Metadata = {
-  title: 'Ketamine Preparation & Integration | Other Ways Therapy',
-  description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
+  title: 'Ketamine Integration Support in Golden, CO | Other Ways Therapy',
+  description: 'Prepare for and integrate ketamine therapy with trauma-informed guidance tailored to Golden, CO clients seeking lasting change.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'Ketamine Preparation & Integration | Other Ways Therapy',
-    description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
+    title: 'Ketamine Integration Support in Golden, CO | Other Ways Therapy',
+    description: 'Prepare for and integrate ketamine therapy with trauma-informed guidance tailored to Golden, CO clients seeking lasting change.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

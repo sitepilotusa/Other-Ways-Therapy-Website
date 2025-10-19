@@ -7,13 +7,13 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/blog';
 
 export const metadata: Metadata = {
-  title: 'Blog | Other Ways Therapy',
-  description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
+  title: 'Therapy Insights Blog from Golden, CO | Other Ways Therapy',
+  description: 'Read EMDR, IFS, and trauma healing articles written in Golden, CO to support your nervous system and growth.',
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
-    title: 'Blog | Other Ways Therapy',
-    description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
+    title: 'Therapy Insights Blog from Golden, CO | Other Ways Therapy',
+    description: 'Read EMDR, IFS, and trauma healing articles written in Golden, CO to support your nervous system and growth.',
     url: `${canonicalBase}${canonicalPath}`,
   },
 };

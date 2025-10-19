@@ -7,12 +7,15 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/specialties';
 
 export const metadata: Metadata = {
-  title: "Specialties | Other Ways Therapy",
+  title: "Anxiety & Trauma Specialties in Golden, CO | Other Ways Therapy",
   description:
-    "Therapy for sneaky anxiety and trauma: overfunctioning, perfectionism, people-pleasing, and boundary work. EMDR and IFS support for clients in Golden, CO and across Colorado.",
+    "Address perfectionism, people-pleasing, and boundary burnout with trauma therapy tailored to Golden, CO professionals.",
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     url: `${canonicalBase}${canonicalPath}`,
+    title: "Anxiety & Trauma Specialties in Golden, CO | Other Ways Therapy",
+    description:
+      "Address perfectionism, people-pleasing, and boundary burnout with trauma therapy tailored to Golden, CO professionals.",
   },
 };
 

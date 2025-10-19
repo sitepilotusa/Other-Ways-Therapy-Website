@@ -5,11 +5,13 @@ import { canonicalBase } from "@/lib/site";
 const canonicalPath = '/privacy';
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Other Ways Therapy",
-  description: "Privacy policy for Other Ways Therapy.",
+  title: "Privacy Policy for Golden, CO Clients | Other Ways Therapy",
+  description: "Review how Other Ways Therapy protects Golden, CO client data, telehealth sessions, and contact details.",
   alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     url: `${canonicalBase}${canonicalPath}`,
+    title: "Privacy Policy for Golden, CO Clients | Other Ways Therapy",
+    description: "Review how Other Ways Therapy protects Golden, CO client data, telehealth sessions, and contact details.",
   },
 };
 
@@ -118,4 +120,3 @@ export default function PrivacyPolicyPage() {
     </main>
   );
 }
-

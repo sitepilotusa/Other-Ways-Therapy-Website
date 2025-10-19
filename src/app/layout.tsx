@@ -32,10 +32,10 @@ const verification: Metadata["verification"] =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
+    default: "Other Ways Therapy | EMDR & IFS in Golden, CO",
     template: "%s | Other Ways Therapy",
   },
-  description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and statewide.",
+  description: "Virtual EMDR, IFS, and ketamine integration helping Golden, CO clients process trauma with nervous system-safe care.",
   alternates: {
     canonical: `${siteUrl}/`,
   },
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Other Ways Therapy",
-    title: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
-    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and throughout the state.",
+    title: "Other Ways Therapy | EMDR & IFS in Golden, CO",
+    description: "Virtual EMDR, IFS, and ketamine integration helping Golden, CO clients process trauma with nervous system-safe care.",
     images: [
       {
         url: `${siteUrl}/other-ways-therapy-social-share-image.avif`,
@@ -85,8 +85,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
-    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and beyond.",
+    title: "Other Ways Therapy | EMDR & IFS in Golden, CO",
+    description: "Virtual EMDR, IFS, and ketamine integration helping Golden, CO clients process trauma with nervous system-safe care.",
     images: [
       `${siteUrl}/other-ways-therapy-social-share-image.avif`,
       `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
