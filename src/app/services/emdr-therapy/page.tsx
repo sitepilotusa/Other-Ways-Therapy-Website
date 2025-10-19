@@ -1,21 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 /* eslint-disable react/no-unescaped-entities */
+
+const canonicalPath = '/services/emdr-therapy';
 
 export const metadata: Metadata = {
   title: 'EMDR Therapy | Other Ways Therapy',
   description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
-  alternates: { canonical: '/services/emdr-therapy' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'EMDR Therapy | Other Ways Therapy',
     description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
-    url: '/services/emdr-therapy',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 
 export default function EMDRTherapy() {
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'EMDR Therapy',
+    areaServed: {
+      '@type': 'State',
+      name: 'Colorado',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Other Ways Therapy',
+    },
+    url: `${canonicalBase}${canonicalPath}`,
+  };
+
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'EMDR Therapy', path: canonicalPath },
+  ]);
+
   const steps = [
     {
       step: "STEP 1:",
@@ -48,20 +73,13 @@ export default function EMDRTherapy() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            serviceType: 'EMDR Therapy',
-            areaServed: {
-              '@type': 'State',
-              name: 'Colorado',
-            },
-            provider: {
-              '@type': 'Organization',
-              name: 'Other Ways Therapy',
-            },
-            url: 'https://otherwaystherapy.com/services/emdr-therapy',
-          }),
+          __html: JSON.stringify(serviceJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd),
         }}
       />
       {/* Hero Section */}

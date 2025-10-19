@@ -1,19 +1,44 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
+
+const canonicalPath = '/services/ketamine-prep-integration';
 
 export const metadata: Metadata = {
   title: 'Ketamine Preparation & Integration | Other Ways Therapy',
   description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
-  alternates: { canonical: '/services/ketamine-prep-integration' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Ketamine Preparation & Integration | Other Ways Therapy',
     description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
-    url: '/services/ketamine-prep-integration',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 
 export default function KetamineIntegration() {
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Ketamine Preparation & Integration',
+    areaServed: {
+      '@type': 'State',
+      name: 'Colorado',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Other Ways Therapy',
+    },
+    url: `${canonicalBase}${canonicalPath}`,
+  };
+
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'Ketamine Preparation & Integration', path: canonicalPath },
+  ]);
+
   const steps = [
     {
       step: "STEP 1:",
@@ -51,20 +76,13 @@ export default function KetamineIntegration() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            serviceType: 'Ketamine Preparation & Integration',
-            areaServed: {
-              '@type': 'State',
-              name: 'Colorado',
-            },
-            provider: {
-              '@type': 'Organization',
-              name: 'Other Ways Therapy',
-            },
-            url: 'https://otherwaystherapy.com/services/ketamine-prep-integration',
-          }),
+          __html: JSON.stringify(serviceJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd),
         }}
       />
       <ServicePageLayout

@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PosthogInit } from "@/components/PosthogInit";
 import Head from "./head";
+import { canonicalBase } from "@/lib/site";
 
 const headingFont = Kalnia({
   variable: "--font-heading",
@@ -19,9 +20,7 @@ const bodyFont = Bricolage_Grotesque({
 });
 
 // Configure URLs for different environments
-const siteUrl = process.env.NODE_ENV === 'development'
-  ? 'http://localhost:3000'
-  : process.env.NEXT_PUBLIC_SITE_URL || "https://otherwaysco.sitepilotpreflight.com"; // Test URL, can be overridden with env var
+const siteUrl = canonicalBase;
 const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
 const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || "/ingest";
 
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
   },
   description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and statewide.",
   alternates: {
-    canonical: "/",
+    canonical: `${siteUrl}/`,
   },
   icons: {
     icon: [

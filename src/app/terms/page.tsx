@@ -1,10 +1,16 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/terms';
 
 export const metadata: Metadata = {
   title: "Terms of Service | Other Ways Therapy",
   description: "Terms of service for Other Ways Therapy.",
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
+  openGraph: {
+    url: `${canonicalBase}${canonicalPath}`,
+  },
 };
 
 export default function TermsOfServicePage() {
@@ -100,5 +106,4 @@ export default function TermsOfServicePage() {
     </main>
   );
 }
-
 

@@ -1,8 +1,8 @@
+import { canonicalBase } from "@/lib/site";
+
 export default function Head() {
   // Use absolute URL for better social crawler compatibility
-  const siteUrl = process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : process.env.NEXT_PUBLIC_SITE_URL || 'https://otherwaysco.sitepilotpreflight.com';
+  const siteUrl = canonicalBase;
   const shareImageAvif = `${siteUrl}/other-ways-therapy-social-share-image.avif`;
   const shareImageJpg = `${siteUrl}/other-ways-therapy-social-share-image.jpg`;
 

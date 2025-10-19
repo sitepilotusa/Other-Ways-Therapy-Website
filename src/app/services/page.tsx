@@ -1,16 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/services';
 
 export const metadata: Metadata = {
   title: 'Services | Other Ways Therapy',
   description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration for clients in Golden, Colorado and statewide.',
-  alternates: { canonical: '/services' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Services | Other Ways Therapy',
     description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration for clients in Golden, Colorado and statewide.',
-    url: '/services',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 

@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { AuthorDatePill } from "@/components/AuthorDatePill";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/blog/life-uh-finds-a-way';
+const canonicalUrl = `${canonicalBase}${canonicalPath}`;
+const shareImage = `${canonicalBase}/assets/molly-pike-licensed-counselor-portrait.avif`;
+const logoUrl = `${canonicalBase}/assets/other-ways-therapy-logo.svg`;
 
 export const metadata: Metadata = {
   title: 'Understanding Your Symptoms & Behaviors Through An EMDR Lens | Other Ways Therapy Blog',
@@ -13,9 +19,9 @@ export const metadata: Metadata = {
     description: 'Understanding how your brain adapted to protect you and how EMDR therapy can help transform these patterns.',
     type: 'article',
     authors: ['Molly Pike'],
-    url: '/blog/life-uh-finds-a-way',
+    url: canonicalUrl,
   },
-  alternates: { canonical: '/blog/life-uh-finds-a-way' },
+  alternates: { canonical: canonicalUrl },
 };
 
 const jsonLd = {
@@ -36,12 +42,13 @@ const jsonLd = {
     name: 'Other Ways Therapy',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg'
+      url: logoUrl
     }
   },
   datePublished: '2025-01-27',
   dateModified: '2025-01-27',
-  image: 'https://otherwaystherapy.com/assets/molly-pike-licensed-counselor-portrait.avif',
+  image: shareImage,
+  mainEntityOfPage: canonicalUrl,
   description: 'Understanding how your brain adapted to protect you and how EMDR therapy can help transform these patterns.',
 };
 

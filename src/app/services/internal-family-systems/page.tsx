@@ -1,20 +1,45 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 /* eslint-disable react/no-unescaped-entities */
+
+const canonicalPath = '/services/internal-family-systems';
 
 export const metadata: Metadata = {
   title: 'Internal Family Systems Therapy | Other Ways Therapy',
   description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
-  alternates: { canonical: '/services/internal-family-systems' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Internal Family Systems Therapy | Other Ways Therapy',
     description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
-    url: '/services/internal-family-systems',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 
 export default function InternalFamilySystems() {
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Internal Family Systems Therapy',
+    areaServed: {
+      '@type': 'State',
+      name: 'Colorado',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Other Ways Therapy',
+    },
+    url: `${canonicalBase}${canonicalPath}`,
+  };
+
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'Internal Family Systems Therapy', path: canonicalPath },
+  ]);
+
   const steps = [
     {
       step: "STEP 1:",
@@ -61,20 +86,13 @@ export default function InternalFamilySystems() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            serviceType: 'Internal Family Systems Therapy',
-            areaServed: {
-              '@type': 'State',
-              name: 'Colorado',
-            },
-            provider: {
-              '@type': 'Organization',
-              name: 'Other Ways Therapy',
-            },
-            url: 'https://otherwaystherapy.com/services/internal-family-systems',
-          }),
+          __html: JSON.stringify(serviceJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd),
         }}
       />
       <ServicePageLayout

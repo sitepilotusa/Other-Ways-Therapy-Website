@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { canonicalBase } from "@/lib/site";
 
 type Params = { slug: string };
 
@@ -35,11 +36,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: `Therapy in ${town} | Other Ways Therapy`,
     description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
     alternates: {
-      canonical: `/areas-we-serve/${slug}`,
+      canonical: `${canonicalBase}/areas-we-serve/${slug}`,
     },
     openGraph: {
       type: 'website',
-      url: `/areas-we-serve/${slug}`,
+      url: `${canonicalBase}/areas-we-serve/${slug}`,
       title: `Therapy in ${town} | Other Ways Therapy`,
       description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
     },
@@ -129,7 +130,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
               '@type': 'Organization',
               name: 'Other Ways Therapy',
             },
-            url: `https://otherwaystherapy.com/areas-we-serve/${slug}`,
+            url: `${canonicalBase}/areas-we-serve/${slug}`,
           }),
         }}
       />

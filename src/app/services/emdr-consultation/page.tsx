@@ -1,23 +1,60 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 /* eslint-disable react/no-unescaped-entities */
+
+const canonicalPath = '/services/emdr-consultation';
 
 export const metadata: Metadata = {
   title: 'EMDR Consultation for Therapists | Other Ways Therapy',
   description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
-  alternates: { canonical: '/services/emdr-consultation' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'EMDR Consultation for Therapists | Other Ways Therapy',
     description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
-    url: '/services/emdr-consultation',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 
 export default function EMDRConsultation() {
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'EMDR Consultation for Therapists',
+    areaServed: {
+      '@type': 'State',
+      name: 'Colorado',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Other Ways Therapy',
+    },
+    url: `${canonicalBase}${canonicalPath}`,
+  };
+
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'EMDR Consultation for Therapists', path: canonicalPath },
+  ]);
+
   return (
     <main className="flex flex-col !bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image

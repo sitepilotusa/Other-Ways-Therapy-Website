@@ -1,17 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/areas-we-serve';
 
 export const metadata: Metadata = {
   title: "Areas We Serve | Other Ways Therapy",
   description:
     "Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.",
-  alternates: { canonical: "/areas-we-serve" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Areas We Serve | Other Ways Therapy',
     description: 'Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.',
-    url: '/areas-we-serve',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 

@@ -1,9 +1,7 @@
 import type { MetadataRoute } from 'next';
+import { canonicalBase } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base =
-    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, '') ||
-    'https://otherwaysco.com';
   const now = new Date();
 
   const routes = [
@@ -36,25 +34,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...routes.map((path) => ({
-      url: `${base}${path}`,
+      url: `${canonicalBase}${path}`,
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
     ...serviceRoutes.map((path) => ({
-      url: `${base}${path}`,
+      url: `${canonicalBase}${path}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
     ...blogRoutes.map((path) => ({
-      url: `${base}${path}`,
+      url: `${canonicalBase}${path}`,
       lastModified: now,
       changeFrequency: 'yearly' as const,
       priority: 0.6,
     })),
     ...areaRoutes.map((path) => ({
-      url: `${base}${path}`,
+      url: `${canonicalBase}${path}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.6,

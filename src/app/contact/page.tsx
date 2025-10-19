@@ -2,16 +2,19 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import CognitoFormEmbed from "@/components/CognitoFormEmbed";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/contact';
 
 export const metadata: Metadata = {
   title: 'Contact | Other Ways Therapy',
   description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
-  alternates: { canonical: '/contact' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Contact | Other Ways Therapy',
     description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
-    url: '/contact',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 

@@ -1,17 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/about';
 
 export const metadata: Metadata = {
   title: "About | Other Ways Therapy",
   description:
     "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
-  alternates: { canonical: "/about" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     title: "About | Other Ways Therapy",
     description:
       "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
     type: "website",
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 

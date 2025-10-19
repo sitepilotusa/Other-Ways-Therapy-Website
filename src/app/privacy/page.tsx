@@ -1,10 +1,16 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/privacy';
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Other Ways Therapy",
   description: "Privacy policy for Other Ways Therapy.",
-  alternates: { canonical: "/privacy" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
+  openGraph: {
+    url: `${canonicalBase}${canonicalPath}`,
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -112,5 +118,4 @@ export default function PrivacyPolicyPage() {
     </main>
   );
 }
-
 

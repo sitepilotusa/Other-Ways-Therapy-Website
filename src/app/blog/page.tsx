@@ -2,16 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { AuthorDatePill } from "@/components/AuthorDatePill";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/blog';
 
 export const metadata: Metadata = {
   title: 'Blog | Other Ways Therapy',
   description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
-  alternates: { canonical: '/blog' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'Blog | Other Ways Therapy',
     description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
-    url: '/blog',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 

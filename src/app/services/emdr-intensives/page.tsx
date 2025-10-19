@@ -1,20 +1,45 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumbs";
 /* eslint-disable react/no-unescaped-entities */
+
+const canonicalPath = '/services/emdr-intensives';
 
 export const metadata: Metadata = {
   title: 'EMDR Intensives | Other Ways Therapy',
   description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
-  alternates: { canonical: '/services/emdr-intensives' },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     type: 'website',
     title: 'EMDR Intensives | Other Ways Therapy',
     description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
-    url: '/services/emdr-intensives',
+    url: `${canonicalBase}${canonicalPath}`,
   },
 };
 
 export default function EMDRIntensives() {
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'EMDR Intensives',
+    areaServed: {
+      '@type': 'State',
+      name: 'Colorado',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Other Ways Therapy',
+    },
+    url: `${canonicalBase}${canonicalPath}`,
+  };
+
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'EMDR Intensives', path: canonicalPath },
+  ]);
+
   const steps = [
     {
       step: "STEP 1:",
@@ -61,20 +86,13 @@ export default function EMDRIntensives() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            serviceType: 'EMDR Intensives',
-            areaServed: {
-              '@type': 'State',
-              name: 'Colorado',
-            },
-            provider: {
-              '@type': 'Organization',
-              name: 'Other Ways Therapy',
-            },
-            url: 'https://otherwaystherapy.com/services/emdr-intensives',
-          }),
+          __html: JSON.stringify(serviceJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd),
         }}
       />
       <ServicePageLayout

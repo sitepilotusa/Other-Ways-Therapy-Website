@@ -1,24 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/';
 
 export const metadata: Metadata = {
   title: "EMDR & IFS Therapy for Golden, Colorado | Other Ways Therapy",
   description:
     "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and throughout the state.",
-  alternates: { canonical: "/" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
   openGraph: {
     title: "EMDR & IFS Therapy for Golden, Colorado | Other Ways Therapy",
     description:
       "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and beyond.",
     type: "website",
+    url: `${canonicalBase}${canonicalPath}`,
     images: [
       {
-        url: "/other-ways-therapy-social-share-image.avif", // Simple relative URL
+        url: `${canonicalBase}/other-ways-therapy-social-share-image.avif`,
         width: 1200,
         height: 630,
         alt: "Other Ways Therapy support for clients in Golden, Colorado",
-        type: "image/jpeg",
+        type: "image/avif",
       },
     ],
   },

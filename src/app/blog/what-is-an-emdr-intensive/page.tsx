@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { AuthorDatePill } from "@/components/AuthorDatePill";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/blog/what-is-an-emdr-intensive';
+const canonicalUrl = `${canonicalBase}${canonicalPath}`;
+const shareImage = `${canonicalBase}/assets/emdr-intensive-therapy-blog-image.avif`;
+const logoUrl = `${canonicalBase}/assets/other-ways-therapy-logo.svg`;
 
 export const metadata: Metadata = {
   title: 'What Is An EMDR Intensive? | Other Ways Therapy Blog',
@@ -13,9 +19,9 @@ export const metadata: Metadata = {
     description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
     type: 'article',
     authors: ['Molly Pike'],
-    url: '/blog/what-is-an-emdr-intensive',
+    url: canonicalUrl,
   },
-  alternates: { canonical: '/blog/what-is-an-emdr-intensive' },
+  alternates: { canonical: canonicalUrl },
 };
 
 const jsonLd = {
@@ -36,12 +42,13 @@ const jsonLd = {
     name: 'Other Ways Therapy',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://otherwaystherapy.com/assets/other-ways-therapy-logo.svg'
+      url: logoUrl
     }
   },
   datePublished: '2025-08-19',
   dateModified: '2025-08-19',
-  image: 'https://otherwaystherapy.com/assets/emdr-intensive-therapy-blog-image.avif',
+  image: shareImage,
+  mainEntityOfPage: canonicalUrl,
   description: 'Learn about EMDR Intensives and retreats - condensed trauma therapy sessions ranging from 3-5 hours.',
 };
 

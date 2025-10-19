@@ -2,12 +2,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { canonicalBase } from "@/lib/site";
+
+const canonicalPath = '/specialties';
 
 export const metadata: Metadata = {
   title: "Specialties | Other Ways Therapy",
   description:
     "Therapy for sneaky anxiety and trauma: overfunctioning, perfectionism, people-pleasing, and boundary work. EMDR and IFS support for clients in Golden, CO and across Colorado.",
-  alternates: { canonical: "/specialties" },
+  alternates: { canonical: `${canonicalBase}${canonicalPath}` },
+  openGraph: {
+    url: `${canonicalBase}${canonicalPath}`,
+  },
 };
 
 export default function Specialties() {
