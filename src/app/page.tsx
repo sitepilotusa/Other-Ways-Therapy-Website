@@ -2,11 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-// Simple approach - just use relative URLs for images
-const siteUrl = process.env.NODE_ENV === 'development' 
-  ? 'http://localhost:3000'
-  : "https://otherwaystherapy.com";
-
 export const metadata: Metadata = {
   title: "EMDR & IFS Therapy in Colorado | Other Ways Therapy",
   description:
@@ -156,6 +151,7 @@ export default function Home() {
             height={560}
             aria-hidden
             priority={false}
+            loading="lazy"
             className="w-[450px] md:w-[600px] rotate-180 lg:rotate-0"
           />
         </div>
@@ -225,6 +221,7 @@ export default function Home() {
                   sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
                   className="object-cover object-center"
                   priority={false}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -239,8 +236,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="pt-6 md:pt-6">
-                <Link href="/services/emdr-intensives" className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-                  Learn more
+                <Link
+                  href="/services/emdr-intensives"
+                  prefetch={false}
+                  className="btn-base btn-dark inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
+                >
+                  Explore EMDR Intensives
                 </Link>
               </div>
             </div>
@@ -260,6 +261,7 @@ export default function Home() {
               height={560}
               aria-hidden
               priority={false}
+              loading="lazy"
               className="rotate-180 lg:rotate-0"
             />
           </div>
@@ -269,7 +271,14 @@ export default function Home() {
               {/* Box 1: EMDR */}
               <div className="flex h-full w-full flex-col items-center text-center card-rounded bg-owt-tertiary-brown text-white p-6 md:p-8 lg:p-10">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/emdr-therapy-icon.svg" alt="EMDR icon" width={55} height={55} className="block mx-auto" />
+                  <Image
+                    src="/assets/emdr-therapy-icon.svg"
+                    alt="EMDR icon"
+                    width={55}
+                    height={55}
+                    loading="lazy"
+                    className="block mx-auto"
+                  />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">EMDR</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">
@@ -278,8 +287,12 @@ export default function Home() {
                   traumatic or painful memories…
                 </p>
                 <div className="pt-5 md:pt-6 mt-auto">
-                  <Link href="/services/emdr-therapy" className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-                    Learn more
+                  <Link
+                    href="/services/emdr-therapy"
+                    prefetch={false}
+                    className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
+                  >
+                    Explore EMDR Therapy
                   </Link>
                 </div>
               </div>
@@ -287,7 +300,14 @@ export default function Home() {
               {/* Box 2: Parts & Somatics */}
               <div className="flex h-full w-full flex-col items-center text-center card-rounded bg-owt-secondary-brown text-white p-6 md:p-8 lg:p-10">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/internal-family-systems-somatics-icon.svg" alt="Parts and Somatics icon" width={85} height={85} className="block mx-auto" />
+                  <Image
+                    src="/assets/internal-family-systems-somatics-icon.svg"
+                    alt="Parts and Somatics icon"
+                    width={85}
+                    height={85}
+                    loading="lazy"
+                    className="block mx-auto"
+                  />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">Parts & Somatics</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">
@@ -296,8 +316,12 @@ export default function Home() {
                   world and the multiplicity of the mind.
                 </p>
                 <div className="pt-5 md:pt-6 mt-auto">
-                  <Link href="/services/internal-family-systems" className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-                    Learn more
+                  <Link
+                    href="/services/internal-family-systems"
+                    prefetch={false}
+                    className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
+                  >
+                    Discover Internal Family Systems Support
                   </Link>
                 </div>
               </div>
@@ -305,7 +329,14 @@ export default function Home() {
               {/* Box 3: KAP */}
               <div className="flex h-full w-full flex-col items-center text-center rounded-[40px] md:rounded-[80px] lg:rounded-[100px] bg-owt-tertiary-brown text-white p-6 md:p-8 lg:p-10 md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto">
                 <div className="flex items-center justify-center h-[85px] mb-4 md:mb-6">
-                  <Image src="/assets/ketamine-assisted-psychotherapy-icon.svg" alt="KAP icon" width={45} height={45} className="block mx-auto" />
+                  <Image
+                    src="/assets/ketamine-assisted-psychotherapy-icon.svg"
+                    alt="KAP icon"
+                    width={45}
+                    height={45}
+                    loading="lazy"
+                    className="block mx-auto"
+                  />
                 </div>
                 <h3 className="heading-font text-lg md:text-xl">KAP</h3>
                 <p className="mt-3 md:mt-4 text-sm md:text-base font-light">
@@ -314,8 +345,12 @@ export default function Home() {
                   therapeutic setting, facilitating profound insights.
                 </p>
                 <div className="pt-5 md:pt-6 mt-auto">
-                  <Link href="/services/ketamine-prep-integration" className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base">
-                    Learn more
+                  <Link
+                    href="/services/ketamine-prep-integration"
+                    prefetch={false}
+                    className="btn-base btn-light inline-flex items-center justify-center px-6 py-3 md:px-7 md:py-3.5 text-sm md:text-base"
+                  >
+                    Explore Ketamine Preparation & Integration
                   </Link>
                 </div>
               </div>
