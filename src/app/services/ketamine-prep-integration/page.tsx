@@ -3,12 +3,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Ketamine Preparation & Integration | Other Ways Therapy',
-  description: 'Ketamine preparation and integration services in Wheat Ridge, Colorado. Support before, during, and after your ketamine therapy experience.',
+  description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
   alternates: { canonical: '/services/ketamine-prep-integration' },
   openGraph: {
     type: 'website',
     title: 'Ketamine Preparation & Integration | Other Ways Therapy',
-    description: 'Ketamine preparation and integration services in Wheat Ridge, Colorado. Support before, during, and after your ketamine therapy experience.',
+    description: 'Ketamine preparation and integration services for clients in Golden, Colorado and surrounding areas. Support before, during, and after your ketamine therapy experience.',
     url: '/services/ketamine-prep-integration',
   },
 };
@@ -70,11 +70,11 @@ export default function KetamineIntegration() {
       <ServicePageLayout
       pageTitle="Ketamine Preparation & Integration"
       introHeading="Ketamine with Therapeutic Support"
-      introText="Comprehensive preparation and integration support to help you make meaning from your ketamine experience—even if it occurred with another provider."
+      introText="Comprehensive preparation and integration support to help you make meaning from your ketamine experience—even if it occurred with another provider. Available to clients in Golden, CO and surrounding areas."
       mainSectionHeading="The KAP Process"
       mainSectionContent={mainSectionContent}
       mainSectionImage="/assets/ketamine-preparation-integration-service-image.avif"
-      mainSectionImageAlt="Ketamine therapy preparation and integration"
+      mainSectionImageAlt="Ketamine therapy preparation and integration support for Golden, Colorado clients"
       mainSectionCTA="Learn About KAP"
       processHeading="Your KAP Journey"
       processDescription="Your ketamine journey is carefully guided from preparation through integration, ensuring you receive maximum benefit from this powerful therapeutic tool."

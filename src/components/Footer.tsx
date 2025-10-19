@@ -110,6 +110,9 @@ export function Footer() {
       <div className="w-full pt-12 sm:pt-16 md:pt-20">
         <div className="bg-owt-bg-secondary px-6 md:px-8 pt-6 sm:pt-8 md:pt-10 pb-6 flex flex-col items-center justify-center gap-3">
           <p className="text-xs md:text-sm !text-owt-text-primary text-center leading-relaxed px-2">
+            Molly serves clients across Colorado, including Golden, Lakewood, Wheat Ridge, Arvada, and Denver.
+          </p>
+          <p className="text-xs md:text-sm !text-owt-text-primary text-center leading-relaxed px-2">
             Copyright © 2025 The Healing Enthusiast PLLC (DBA Other Ways Therapy). All rights reserved.
           </p>
           <div className="flex items-center gap-2 sm:gap-3 text-xs md:text-sm !text-owt-text-primary">

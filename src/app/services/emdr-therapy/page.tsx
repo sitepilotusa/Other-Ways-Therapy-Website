@@ -5,12 +5,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'EMDR Therapy | Other Ways Therapy',
-  description: 'Evidence-based EMDR therapy in Wheat Ridge, Colorado. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
+  description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
   alternates: { canonical: '/services/emdr-therapy' },
   openGraph: {
     type: 'website',
     title: 'EMDR Therapy | Other Ways Therapy',
-    description: 'Evidence-based EMDR therapy in Wheat Ridge, Colorado. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
+    description: 'Evidence-based EMDR therapy for clients in Golden, Colorado and surrounding areas. Gentle, structured trauma processing to help you heal from stuck memories and patterns.',
     url: '/services/emdr-therapy',
   },
 };
@@ -68,7 +68,7 @@ export default function EMDRTherapy() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="EMDR Therapy at Other Ways Therapy"
+          alt="EMDR Therapy support for Golden, Colorado clients"
           fill
           priority
           sizes="100vw"
@@ -97,7 +97,7 @@ export default function EMDRTherapy() {
               Healing Through Gentle, Evidence-Based Processing
             </h2>
             <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-              EMDR is a scientifically-validated therapy that helps your brain process difficult experiences without reliving them in detail. This gentle approach works directly with how memories are stored in your nervous system, helping you move beyond patterns that no longer serve you and creating space for resilience and renewed hope.
+              EMDR is a scientifically-validated therapy that helps your brain process difficult experiences without reliving them in detail. This gentle approach works directly with how memories are stored in your nervous system, helping you move beyond patterns that no longer serve you and creating space for resilience and renewed hope. Available to clients in Golden, CO and surrounding areas.
             </p>
           </div>
         </div>

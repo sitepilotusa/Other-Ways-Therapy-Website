@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About | Other Ways Therapy",
   description:
-    "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy in Wheat Ridge, Colorado.",
+    "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About | Other Ways Therapy",
     description:
-      "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy in Wheat Ridge, Colorado.",
+      "Learn about Other Ways Therapy and Molly Pike, LPC. Trauma-informed EMDR, IFS, and intensive therapy for clients in Golden, Colorado and across the state.",
     type: "website",
   },
 };
@@ -22,7 +22,7 @@ export default function About() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="About Other Ways Therapy"
+          alt="About Other Ways Therapy serving Golden, Colorado"
           fill
           priority
           sizes="100vw"
@@ -118,7 +118,7 @@ export default function About() {
             <div className="text-owt-text-primary font-light leading-relaxed space-y-8 md:space-y-10 text-sm md:text-base">
               
               <p>
-                I was once published in a world-renowned newspaper. And by published, I mean side-column featured. And by world-renowned newspaper, I mean my middle school's low-budget media class project. I was voted by my fellow classmates that year as "Class Clown" and "Most Mature." I mention this not because I bask in the glory of my middle school days (is that a thing?), but because these apparent opposing parts of myself have always been true to me. Balancing humor and the heaviness of humanity is how I engage in the world, because I have learned we cannot eliminate pain, hardship or undesired parts of ourselves. In attempting to do so myself, I exacerbated an internal struggle for many years. Perhaps you can relate.
+                I was once published in a world-renowned newspaper. And by published, I mean side-column featured. And by world-renowned newspaper, I mean my middle school's low-budget media class project. I was voted by my fellow classmates that year as "Class Clown" and "Most Mature." I mention this not because I bask in the glory of my middle school days (is that a thing?), but because these apparent opposing parts of myself have always been true to me. Balancing humor and the heaviness of humanity is how I engage in the world, because I have learned we cannot eliminate pain, hardship or undesired parts of ourselves. In attempting to do so myself, I exacerbated an internal struggle for many years. Perhaps you can relate. I serve clients virtually in Golden, CO and across Colorado.
               </p>
               
               <div className="w-16 h-px bg-[#BB8B74]/30 mx-auto"></div>

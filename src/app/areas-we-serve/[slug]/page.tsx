@@ -10,7 +10,6 @@ const TOWNS = [
   "Wheat Ridge",
   "Denver",
   "Arvada",
-  "Golden",
   "Boulder",
 ];
 
@@ -34,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const town = fromSlug(slug);
   return {
     title: `Therapy in ${town} | Other Ways Therapy`,
-    description: `Compassionate, effective therapy intensives for individuals and families in ${town}. In-person in Wheat Ridge and virtual statewide.`,
+    description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
     alternates: {
       canonical: `/areas-we-serve/${slug}`,
     },
@@ -42,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       type: 'website',
       url: `/areas-we-serve/${slug}`,
       title: `Therapy in ${town} | Other Ways Therapy`,
-      description: `Compassionate, effective therapy intensives for individuals and families in ${town}. In-person in Wheat Ridge and virtual statewide.`,
+      description: `Compassionate, effective therapy intensives for individuals in ${town} and virtually statewide.`,
     },
   };
 }
@@ -103,7 +102,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
     },
     {
       title: "Front Range Convenience",
-      description: `In-person sessions at our Wheat Ridge office—centrally located near ${town}.`,
+      description: `Flexible scheduling and easy access for clients in Golden, ${town}, and nearby Front Range communities.`,
       icon: "/assets/therapy-planning-icon.svg",
     },
   ];
@@ -155,7 +154,7 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
                   Therapy in {town}
                 </h1>
                 <p className="text-white font-light text-clamp-hero-subtitle max-w-4xl">
-                  Providing compassionate, effective therapy intensives for individuals and families in {town} and virtually statewide.
+                  Providing compassionate, effective therapy intensives for individuals in {town} and virtually statewide.
                 </p>
                 <div className="mt-2 md:mt-3">
                   <Link
@@ -197,11 +196,69 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
             </h2>
             <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-4">
               <p>
-                If you live in {town}, you don’t have to travel far for transformative therapy intensives. Our Wheat Ridge office is just a short drive away, and we also offer secure, virtual sessions for convenience.
+                If you live in {town}, transformative therapy intensives are within reach. Enjoy secure sessions designed for flexibility and ease, wherever you are in Colorado.
               </p>
               <p>
                 Whether you’re seeking EMDR, Internal Family Systems therapy, or integrative support, we provide compassionate, evidence-based care that meets you where you are—in person or online.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Me Section (from homepage) */}
+      <section className="relative w-full bg-owt-bg-primary section-padding overflow-hidden">
+        {/* Decorative background SVG from the top-right corner */}
+        <div className="pointer-events-none select-none absolute right-8 md:right-16 lg:right-24 bottom-0 translate-y-[10%] lg:bottom-auto lg:top-0 lg:-translate-y-[30%] z-0 opacity-90">
+          <Image
+            src="/assets/decorative-leaf-pattern-left.svg"
+            alt=""
+            width={600}
+            height={560}
+            aria-hidden
+            priority={false}
+            className="rotate-180 lg:rotate-0"
+          />
+        </div>
+
+        <div className="relative z-10 section-container">
+          <div className="section-grid-2col">
+            {/* Left column: text */}
+            <div className="flex flex-col">
+              <span className="text-clamp-eyebrow font-semibold tracking-[.06em] text-owt-text-secondary mb-4 md:mb-6">ABOUT ME</span>
+              <h2 className="heading-font text-clamp-about-title text-[var(--owt-supporting)]">Hi, I’m Molly!</h2>
+              <div className="mt-4 md:mt-6 flex flex-col gap-4 text-sm md:text-base text-owt-text-primary font-light">
+                <p>
+                  I admire the courageous journey people take to heal from their painful life experiences in order to
+                  live a more present, integrated, meaningful life.
+                </p>
+                <p>
+                  Whether you’re navigating the effects of trauma, anxiety, relationship challenges, experiencing a life
+                  transition, or seeking personal growth, I offer a safe space for you to find your own path towards
+                  healing.
+                </p>
+                <p>
+                  As a Licensed Professional Counselor, Certified EMDR Clinician, IFS trained therapist, Ketamine Assisted Psychotherapy trained and Founder of Other Ways Therapy, I honor the diversity of human experience and recognize that there is no one-size-fits-all approach to healing. My integrative therapy approach combines evidence-based modalities
+                  and somatic practices to help you reconnect with your inner wisdom and move toward lasting change.
+                </p>
+                <p>
+                  We’ll work together to help you understand and transform the patterns that no longer serve you, at a pace that feels right for you.
+                </p>
+              </div>
+            </div>
+
+            {/* Right column: Molly image */}
+            <div className="relative flex justify-center lg:justify-end mt-8 md:mt-12 lg:mt-0">
+              <div className="relative rounded-full overflow-hidden w-[20rem] h-[20rem] md:w-[24rem] md:h-[24rem] lg:w-[26rem] lg:h-[26rem] !bg-white/50 shadow-2xl">
+                <Image
+                  src="/assets/molly-pike-therapist-portrait.avif"
+                  alt="Molly Pike, founder of Other Ways Therapy"
+                  fill
+                  sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 28rem, 20rem"
+                  className="object-cover object-center"
+                  priority={false}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -294,4 +351,3 @@ export default async function TownPage({ params }: { params: Promise<Params> }) 
     </>
   );
 }
-

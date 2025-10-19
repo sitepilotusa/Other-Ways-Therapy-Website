@@ -4,12 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'EMDR Intensives | Other Ways Therapy',
-  description: 'EMDR Intensive sessions in Wheat Ridge, Colorado. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
+  description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
   alternates: { canonical: '/services/emdr-intensives' },
   openGraph: {
     type: 'website',
     title: 'EMDR Intensives | Other Ways Therapy',
-    description: 'EMDR Intensive sessions in Wheat Ridge, Colorado. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
+    description: 'EMDR Intensive sessions for clients in Golden, Colorado and surrounding areas. Condensed 3-5 hour focused sessions for accelerated trauma healing and processing.',
     url: '/services/emdr-intensives',
   },
 };
@@ -80,11 +80,11 @@ export default function EMDRIntensives() {
       <ServicePageLayout
       pageTitle="EMDR Intensives"
       introHeading="Accelerated Healing in Focused Sessions"
-      introText="EMDR Intensives provide concentrated healing work in 3-5 hour sessions, perfect for those seeking significant progress in a shorter timeframe. This format allows for deeper processing and breakthrough moments that can transform your healing journey."
+      introText="EMDR Intensives provide concentrated healing work in 3-5 hour sessions, perfect for those seeking significant progress in a shorter timeframe. This format allows for deeper processing and breakthrough moments that can transform your healing journey. Available to clients in Golden, CO and surrounding areas."
       mainSectionHeading="The Power of Intensive Work"
       mainSectionContent={mainSectionContent}
       mainSectionImage="/assets/emdr-intensives-service-page-image.avif"
-      mainSectionImageAlt="EMDR Intensive therapy session"
+      mainSectionImageAlt="EMDR Intensive therapy session support for Golden, Colorado clients"
       mainSectionCTA="Schedule Your Intensive"
       processHeading="Your Intensive Experience"
       processDescription="Your intensive experience is carefully structured to maximize healing while ensuring your safety and comfort throughout the process."

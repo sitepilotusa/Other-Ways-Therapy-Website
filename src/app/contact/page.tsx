@@ -5,12 +5,12 @@ import CognitoFormEmbed from "@/components/CognitoFormEmbed";
 
 export const metadata: Metadata = {
   title: 'Contact | Other Ways Therapy',
-  description: 'Contact Other Ways Therapy in Wheat Ridge, Colorado. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
+  description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
   alternates: { canonical: '/contact' },
   openGraph: {
     type: 'website',
     title: 'Contact | Other Ways Therapy',
-    description: 'Contact Other Ways Therapy in Wheat Ridge, Colorado. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
+    description: 'Contact Other Ways Therapy for support in Golden, Colorado and across the state. Schedule a free consultation for EMDR therapy, trauma treatment, and healing services.',
     url: '/contact',
   },
 };
@@ -22,7 +22,7 @@ export default function Contact() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="Contact Other Ways Therapy"
+          alt="Contact Other Ways Therapy serving Golden, Colorado"
           fill
           priority
           sizes="100vw"
@@ -61,7 +61,7 @@ export default function Contact() {
               </p>
               
               <p className="text-sm md:text-base text-white font-medium mb-2">
-                Virtual Services: Available to clients throughout Colorado.
+                Virtual Services: Available to clients in Golden, CO and throughout Colorado.
               </p>
               
               {/* Contact Form */}
@@ -89,7 +89,7 @@ export default function Contact() {
                     $165 (Online Only)
                   </p>
                   <p className="text-sm md:text-base text-owt-text-primary font-medium mb-4">
-                    EMDR Extended Sessions & Intensives: Self‑Pay Only (Online or In‑Person)
+                    EMDR Extended Sessions & Intensives: Self‑Pay Only (Online)
                   </p>
                   <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
                     Please send a message through my contact form or schedule a consultation to discuss your unique situation and needs. My intensive format is generally one half to one full day, in addition to an intake/planning and an integration session.

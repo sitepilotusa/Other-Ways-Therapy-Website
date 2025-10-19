@@ -5,12 +5,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'EMDR Consultation for Therapists | Other Ways Therapy',
-  description: 'EMDRIA-informed consultation for therapists in Colorado. Support for EMDR competency, certification, and advanced clinical skills development.',
+  description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
   alternates: { canonical: '/services/emdr-consultation' },
   openGraph: {
     type: 'website',
     title: 'EMDR Consultation for Therapists | Other Ways Therapy',
-    description: 'EMDRIA-informed consultation for therapists in Colorado. Support for EMDR competency, certification, and advanced clinical skills development.',
+    description: 'EMDRIA-informed consultation for therapists in Golden, Colorado and statewide. Support for EMDR competency, certification, and advanced clinical skills development.',
     url: '/services/emdr-consultation',
   },
 };
@@ -22,7 +22,7 @@ export default function EMDRConsultation() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="EMDR Consultation for Therapists"
+          alt="EMDR Consultation for Therapists supporting Golden, Colorado clinicians"
           fill
           priority
           sizes="100vw"
@@ -46,7 +46,7 @@ export default function EMDRConsultation() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-              I am a Certified EMDR Therapist and EMDRIA Approved Consultant. I offer consultation for therapists at every stage of their EMDR journey—from those newly trained to those continuing to deepen and refine their clinical practice.
+              I am a Certified EMDR Therapist and EMDRIA Approved Consultant. I offer consultation for therapists at every stage of their EMDR journey—from those newly trained to those continuing to deepen and refine their clinical practice. Sessions are available to clinicians in Golden, CO and across Colorado.
             </p>
           </div>
         </div>

@@ -117,7 +117,7 @@ export default function BlogPost() {
                 <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-6">
                   <div className="bg-[#F8F6F0] rounded-[20px] p-6 md:p-8 border-l-4 border-owt-primary-brown">
                     <p className="text-base md:text-lg leading-relaxed">
-                      EMDR Intensives, or Retreats, are a more condensed version of EMDR therapy and can be offered in a variety of formats. Currently I offer EMDR Intensives ranging from <span className="font-medium text-owt-supporting">3 to 5 hours</span>, in addition to our planning and integration sessions. While you may find Intensives offered all over the world, I am licensed to work only with clients who are present in the state of Colorado, either in-person near Denver or online from anywhere else in the state.
+                      EMDR Intensives, or Retreats, are a more condensed version of EMDR therapy and can be offered in a variety of formats. Currently I offer EMDR Intensives ranging from <span className="font-medium text-owt-supporting">3 to 5 hours</span>, in addition to our planning and integration sessions. While you may find Intensives offered all over the world, I am licensed to work only with clients who are present in the state of Colorado, including those in Golden, the Denver metro area, and elsewhere via secure online support.
                     </p>
                   </div>
                 </div>

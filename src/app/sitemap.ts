@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/life-uh-finds-a-way',
   ];
 
-  const towns = ['lakewood', 'wheat-ridge', 'denver', 'arvada', 'golden', 'boulder'];
+  const towns = ['lakewood', 'wheat-ridge', 'denver', 'arvada', 'boulder'];
   const areaRoutes = towns.map((slug) => `/areas-we-serve/${slug}`);
 
   return [
@@ -59,5 +59,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
-
 

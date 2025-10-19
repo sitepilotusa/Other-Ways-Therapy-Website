@@ -3,21 +3,21 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EMDR & IFS Therapy in Colorado | Other Ways Therapy",
+  title: "EMDR & IFS Therapy for Golden, Colorado | Other Ways Therapy",
   description:
-    "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado. In-person in Wheat Ridge and virtual statewide.",
+    "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and throughout the state.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "EMDR & IFS Therapy in Colorado | Other Ways Therapy",
+    title: "EMDR & IFS Therapy for Golden, Colorado | Other Ways Therapy",
     description:
-      "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+      "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and beyond.",
     type: "website",
     images: [
       {
         url: "/other-ways-therapy-social-share-image.avif", // Simple relative URL
         width: 1200,
         height: 630,
-        alt: "Other Ways Therapy",
+        alt: "Other Ways Therapy support for clients in Golden, Colorado",
         type: "image/jpeg",
       },
     ],
@@ -31,7 +31,7 @@ export default function Home() {
       <section className="relative w-full min-h-[60vh] md:min-h-[75vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="Therapeutic landscape background for Other Ways Therapy"
+          alt="Therapeutic landscape background for Other Ways Therapy in Golden, Colorado"
           fill
           priority
           sizes="100vw"
@@ -47,7 +47,7 @@ export default function Home() {
                   Other Ways Therapy
                 </h1>
                 <p className="text-white font-light text-clamp-hero-subtitle max-w-4xl">
-                  Transformative Therapy in Colorado for Anxiety and Trauma
+                  Transformative Therapy for Anxiety and Trauma in Golden, CO and Across Colorado
                 </p>
                 <div className="mt-2 md:mt-3">
                   <Link

@@ -30,10 +30,10 @@ const verification: Metadata["verification"] =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Other Ways Therapy | EMDR & IFS in Colorado",
+    default: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
     template: "%s | Other Ways Therapy",
   },
-  description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+  description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and statewide.",
   alternates: {
     canonical: "/",
   },
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Other Ways Therapy",
-    title: "Other Ways Therapy | EMDR & IFS in Colorado",
-    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+    title: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
+    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and throughout the state.",
     images: [
       {
         url: `${siteUrl}/other-ways-therapy-social-share-image.avif`,
@@ -83,8 +83,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Other Ways Therapy | EMDR & IFS in Colorado",
-    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration in Colorado.",
+    title: "Other Ways Therapy | EMDR & IFS for Golden, Colorado",
+    description: "Therapy for anxiety and trauma, EMDR, IFS, and ketamine preparation & integration for clients in Golden, Colorado and beyond.",
     images: [
       `${siteUrl}/other-ways-therapy-social-share-image.avif`,
       `${siteUrl}/other-ways-therapy-social-share-image.jpg`,
@@ -144,23 +144,24 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Other Ways Therapy",
+              name: "Molly Pike at Other Ways Therapy",
               url: siteUrl,
               image:
                 `${siteUrl}/assets/other-ways-therapy-logo.avif`,
               telephone: "+1-720-863-6373",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "4251 Kipling St. #430",
-                addressLocality: "Wheat Ridge",
-                addressRegion: "CO",
-                postalCode: "80033",
-                addressCountry: "US",
+              description: "Virtual EMDR, IFS, and trauma therapy supporting clients in Golden, Colorado and nearby Front Range communities.",
+              founder: {
+                "@type": "Person",
+                name: "Molly Pike",
+                jobTitle: "Licensed Professional Counselor",
               },
-              areaServed: {
-                "@type": "State",
-                name: "Colorado",
-              },
+              areaServed: [
+                { "@type": "City", name: "Golden", addressRegion: "CO", addressCountry: "US" },
+                { "@type": "City", name: "Lakewood", addressRegion: "CO", addressCountry: "US" },
+                { "@type": "City", name: "Wheat Ridge", addressRegion: "CO", addressCountry: "US" },
+                { "@type": "City", name: "Arvada", addressRegion: "CO", addressCountry: "US" },
+                { "@type": "City", name: "Denver", addressRegion: "CO", addressCountry: "US" },
+              ],
             }),
           }}
         />

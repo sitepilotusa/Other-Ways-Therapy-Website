@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Specialties | Other Ways Therapy",
   description:
-    "Therapy for sneaky anxiety and trauma: overfunctioning, perfectionism, people-pleasing, and boundary work. EMDR and IFS in Colorado.",
+    "Therapy for sneaky anxiety and trauma: overfunctioning, perfectionism, people-pleasing, and boundary work. EMDR and IFS support for clients in Golden, CO and across Colorado.",
   alternates: { canonical: "/specialties" },
 };
 
@@ -17,7 +17,7 @@ export default function Specialties() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="Specialties at Other Ways Therapy"
+          alt="Specialties at Other Ways Therapy for Golden, Colorado clients"
           fill
           priority
           sizes="100vw"
@@ -46,7 +46,7 @@ export default function Specialties() {
               Therapy for Sneaky Anxiety & Trauma
             </h2>
             <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-              Explore therapy for sneaky anxiety and trauma patterns that may be impacting your daily life.
+              Explore therapy for sneaky anxiety and trauma patterns that may be impacting your daily life in Golden, CO and across the state.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Specialties() {
             
             <div className="mb-8 text-center">
               <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-                Sneaky anxiety often doesn't look like panic attacks or obvious worry. Instead, it shows up as:
+                Sneaky anxiety often doesn't look like panic attacks or obvious worry. Instead, it shows up for many Golden, Colorado professionals as:
               </p>
             </div>
 
@@ -288,7 +288,7 @@ export default function Specialties() {
             
             <div className="mb-8 text-center">
               <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-                Together, we can:
+                Together, we can collaborate on the following—whether you're rooted in Golden, CO or elsewhere in Colorado:
               </p>
             </div>
             

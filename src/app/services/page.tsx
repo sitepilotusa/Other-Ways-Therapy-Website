@@ -4,12 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Services | Other Ways Therapy',
-  description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration in Wheat Ridge, Colorado.',
+  description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration for clients in Golden, Colorado and statewide.',
   alternates: { canonical: '/services' },
   openGraph: {
     type: 'website',
     title: 'Services | Other Ways Therapy',
-    description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration in Wheat Ridge, Colorado.',
+    description: 'Comprehensive trauma therapy services including EMDR, Internal Family Systems, and Ketamine Integration for clients in Golden, Colorado and statewide.',
     url: '/services',
   },
 };
@@ -83,7 +83,7 @@ export default function Services() {
               My Approach
             </h2>
             <p className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed">
-              I offer a range of evidence-based therapeutic services from my practice in Wheat Ridge, serving the Denver metro area and throughout Colorado. Each approach is tailored to meet your unique needs and healing journey.
+              I offer a range of evidence-based therapeutic services supporting Golden, the Denver metro area, and communities throughout Colorado. Each approach is tailored to meet your unique needs and healing journey.
             </p>
           </div>
 

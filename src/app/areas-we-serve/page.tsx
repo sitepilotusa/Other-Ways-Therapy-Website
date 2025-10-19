@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Areas We Serve | Other Ways Therapy",
   description:
-    "Providing transformative therapy intensives across Colorado — in-person in Wheat Ridge and virtually statewide.",
+    "Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.",
   alternates: { canonical: "/areas-we-serve" },
   openGraph: {
     type: 'website',
     title: 'Areas We Serve | Other Ways Therapy',
-    description: 'Providing transformative therapy intensives across Colorado — in-person in Wheat Ridge and virtually statewide.',
+    description: 'Providing transformative therapy intensives across Colorado, with dedicated support for Golden and nearby Front Range communities.',
     url: '/areas-we-serve',
   },
 };
@@ -20,7 +20,6 @@ const TOWNS = [
   "Wheat Ridge",
   "Denver",
   "Arvada",
-  "Golden",
   "Boulder",
 ];
 
@@ -63,11 +62,10 @@ export default function AreasWeServe() {
             </h2>
             <div className="text-sm md:text-base text-owt-text-primary font-light leading-relaxed space-y-4">
               <p>
-                We serve clients in-person at our Wheat Ridge office and virtually throughout Colorado, meeting you where
-                you are with compassionate, effective care.
+                We serve clients throughout Colorado, meeting you where you are with compassionate, effective care centered on Golden and the surrounding Front Range.
               </p>
               <p>
-                Whether you live along the Front Range or elsewhere in the state, we offer accessible therapy intensives
+                Whether you live along the Front Range or elsewhere in the state, including Golden, we offer accessible therapy intensives
                 to support your healing.
               </p>
             </div>
@@ -107,5 +105,3 @@ export default function AreasWeServe() {
     </main>
   );
 }
-
-

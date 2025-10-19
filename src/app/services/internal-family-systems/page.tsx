@@ -4,12 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Internal Family Systems Therapy | Other Ways Therapy',
-  description: 'Internal Family Systems (IFS) therapy in Wheat Ridge, Colorado. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
+  description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
   alternates: { canonical: '/services/internal-family-systems' },
   openGraph: {
     type: 'website',
     title: 'Internal Family Systems Therapy | Other Ways Therapy',
-    description: 'Internal Family Systems (IFS) therapy in Wheat Ridge, Colorado. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
+    description: 'Internal Family Systems (IFS) therapy for clients in Golden, Colorado and surrounding areas. Explore your inner parts, foster Self-leadership, and integrate mind-body wisdom.',
     url: '/services/internal-family-systems',
   },
 };
@@ -80,11 +80,11 @@ export default function InternalFamilySystems() {
       <ServicePageLayout
       pageTitle="Internal Family Systems Therapy"
       introHeading="Honoring All Parts of Yourself"
-      introText="Internal Family Systems (IFS) therapy helps you develop a compassionate relationship with all aspects of yourself. This approach recognizes that we all contain multiple parts, each with their own wisdom and protective function, while fostering Self-leadership from your calm, curious center."
+      introText="Internal Family Systems (IFS) therapy helps you develop a compassionate relationship with all aspects of yourself. This approach recognizes that we all contain multiple parts, each with their own wisdom and protective function, while fostering Self-leadership from your calm, curious center. Available to clients in Golden, CO and surrounding areas."
       mainSectionHeading="Understanding Your Inner System"
       mainSectionContent={mainSectionContent}
       mainSectionImage="/assets/internal-family-systems-service-page-image.avif"
-      mainSectionImageAlt="Internal Family Systems therapy illustration"
+      mainSectionImageAlt="Internal Family Systems therapy illustration supporting Golden, Colorado clients"
       mainSectionCTA="Explore IFS Therapy"
       processHeading="Your IFS Journey"
       processDescription="Your IFS journey is about developing Self-leadership and creating harmony among your internal parts, leading to greater self-compassion and authentic living."

@@ -5,12 +5,12 @@ import { AuthorDatePill } from "@/components/AuthorDatePill";
 
 export const metadata: Metadata = {
   title: 'Blog | Other Ways Therapy',
-  description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy in Wheat Ridge, Colorado.',
+  description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
   alternates: { canonical: '/blog' },
   openGraph: {
     type: 'website',
     title: 'Blog | Other Ways Therapy',
-    description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy in Wheat Ridge, Colorado.',
+    description: 'Insights on trauma therapy, healing, and mental health from Other Ways Therapy for clients in Golden, Colorado and across the state.',
     url: '/blog',
   },
 };
@@ -22,7 +22,7 @@ export default function Blog() {
       <section className="relative w-full min-h-[40vh] md:min-h-[50vh] overflow-hidden rounded-b-[50px] md:rounded-b-[100px]">
         <Image
           src="/assets/therapy-healing-landscape-background.avif"
-          alt="Blog at Other Ways Therapy"
+          alt="Blog at Other Ways Therapy for Golden, Colorado clients"
           fill
           priority
           sizes="100vw"
