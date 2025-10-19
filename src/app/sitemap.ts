@@ -1,7 +1,9 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://otherwaystherapy.com';
+  const base =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, '') ||
+    'https://www.otherwaysco.com';
   const now = new Date();
 
   const routes = [
@@ -59,4 +61,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
-
