@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Kalnia, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { PosthogInit } from "@/components/PosthogInit";
 import Head from "./head";
 
 const headingFont = Kalnia({
@@ -21,6 +22,8 @@ const bodyFont = Bricolage_Grotesque({
 const siteUrl = process.env.NODE_ENV === 'development'
   ? 'http://localhost:3000'
   : process.env.NEXT_PUBLIC_SITE_URL || "https://otherwaysco.sitepilotpreflight.com"; // Test URL, can be overridden with env var
+const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || "/ingest";
 
 const verification: Metadata["verification"] =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
@@ -125,6 +128,12 @@ export default function RootLayout({
           <a href="#site-navigation" className="skip-link">Skip to navigation</a>
           <a href="#site-footer" className="skip-link">Skip to footer</a>
         </nav>
+        <PosthogInit
+          apiKey={posthogKey}
+          apiHost={posthogHost}
+          uiHost="https://us.posthog.com"
+          debug={process.env.NODE_ENV === "development"}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
